@@ -1,19 +1,19 @@
 /*=========================
 	All css
 ==========================*/
-@import "/public/plugins/bootstrap/css/bootstrap.min.css";
-@import "/public/plugins/fontawesome/css/font-awesome.min.css";
-@import "/public/plugins/line-awesome/css/line-awesome.min.css";
-@import "/public/plugins/flaticon/flaticon.css";
-@import "/public/plugins/themify/themify-icons.css";
+@import "bootstrap/css/bootstrap.min.css";
+@import "fontawesome/css/font-awesome.min.css";
+@import "line-awesome/css/line-awesome.min.css";
+@import "flaticon/flaticon.css";
+@import "themify/themify-icons.css";
 /* @import "../plugins/owl-carousel/owl.carousel.css"; */
 /* @import "../plugins/bootstrap-select/bootstrap-select.min.css"; */
 /* @import "../plugins/magnific-popup/magnific-popup.css"; */
-@import "/public/plugins/animate/animate.css";
+@import "animate/animate.css";
 /* @import "../plugins/scroll/scrollbar.css"; */
 /* @import "../plugins/rangeslider/rangeslider.css"; */
 /* @import "../plugins/lightgallery/css/lightgallery.min.css"; */
-@import "/public/plugins/button-effects/button.css";
+@import "button-effects/button.css";
 
 /*=========================
 	All css
