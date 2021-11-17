@@ -4,3 +4,28 @@
 .falinkwarna:hover {
   color: #333333;
 }
+.colorfix {
+  color: #00570a;
+}
+.borderer {
+  border: 1px solid black;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("/images/background/bg19.jpg");
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 100%;
+  flex: 1;
+  height: 300px;
+}
+
+.paddingnull {
+  padding: 0;
+}
+
+.tinggi {
+  height: 600px;
+}
