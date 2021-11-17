@@ -99,7 +99,7 @@ export class ProjectDetails2 extends Component {
                       </div>
                       <div class="dlab-info">
                         <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Direchrefr</span>
+                        <span class="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
@@ -115,7 +115,7 @@ export class ProjectDetails2 extends Component {
                       </div>
                       <div class="dlab-info">
                         <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Direchrefr</span>
+                        <span class="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
@@ -131,7 +131,7 @@ export class ProjectDetails2 extends Component {
                       </div>
                       <div class="dlab-info">
                         <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Direchrefr</span>
+                        <span class="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
@@ -147,7 +147,7 @@ export class ProjectDetails2 extends Component {
                       </div>
                       <div class="dlab-info">
                         <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Direchrefr</span>
+                        <span class="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
@@ -163,7 +163,7 @@ export class ProjectDetails2 extends Component {
                       </div>
                       <div class="dlab-info">
                         <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Direchrefr</span>
+                        <span class="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
@@ -179,7 +179,7 @@ export class ProjectDetails2 extends Component {
                       </div>
                       <div class="dlab-info">
                         <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Direchrefr</span>
+                        <span class="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
@@ -195,7 +195,7 @@ export class ProjectDetails2 extends Component {
                       </div>
                       <div class="dlab-info">
                         <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Direchrefr</span>
+                        <span class="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
@@ -211,7 +211,7 @@ export class ProjectDetails2 extends Component {
                       </div>
                       <div class="dlab-info">
                         <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Direchrefr</span>
+                        <span class="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
