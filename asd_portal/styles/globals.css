@@ -1,4 +1,5 @@
+@import "css/plugins.css";
 @import "css/skin/skin-1.css";
 @import "css/templete.min.css";
 @import "css/style.css";
-@import "css/plugins.css";
+@import "custom.css";

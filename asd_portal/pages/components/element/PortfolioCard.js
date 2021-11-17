@@ -117,7 +117,7 @@ const filterImages = (filterKey, images) => {
   return list;
 };
 
-const Portfolio = (props) => {
+const PortfolioCard = (props) => {
   const [state, setState] = useState({
     list: images,
     filterKey: "all",
@@ -199,4 +199,4 @@ const Portfolio = (props) => {
   );
 };
 
-export default Portfolio;
+export default PortfolioCard;
