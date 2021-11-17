@@ -2,10 +2,10 @@
 	Premery bg color 
 =====================*/
 
-:root{
-	--color-primary: #ff5e14;
-	--color-secondry: #e44800;
-	--color-hover: #ff8022;
+:root {
+  --color-primary: #ff5e14;
+  --color-secondry: #e44800;
+  --color-hover: #ff8022;
 }
 
 /* Hex */
@@ -42,21 +42,21 @@
 .header-style-4.style-1 .header-nav .nav > li.active a:before,
 .header-style-4.style-1 .header-nav .nav > li:hover > a:before,
 .dlab-project-left:after,
-.service-carousel .owl-prev, 
+.service-carousel .owl-prev,
 .service-carousel .owl-next,
 .about-us .dlab-tabs .nav-tabs li.active a,
 .testimonial-text.bg-primary,
 .sidenav ul li a:hover,
 .owl-theme.dots-style-2 .owl-dots .owl-dot.active span,
-.owl-btn-1.primary .owl-prev, 
+.owl-btn-1.primary .owl-prev,
 .owl-btn-1.primary .owl-next,
-.owl-btn-2.primary .owl-prev, 
+.owl-btn-2.primary .owl-prev,
 .owl-btn-2.primary .owl-next,
-.owl-slider-banner .owl-theme .owl-dots .owl-dot.active span, 
+.owl-slider-banner .owl-theme .owl-dots .owl-dot.active span,
 .owl-slider-banner .owl-theme .owl-dots .owl-dot:hover span,
 .product-item-size .btn.active,
 .ui-widget-header,
-.owl-theme.dots-style-3 .owl-dots .owl-dot.active span, 
+.owl-theme.dots-style-3 .owl-dots .owl-dot.active span,
 .owl-theme.dots-style-3 .owl-dots .owl-dot:hover span,
 .owl-item.active.center .testimonial-text,
 .icon-bx-wraper.hover:hover,
@@ -70,7 +70,7 @@
 .site-footer.style1 .footer-title:after,
 button.scroltop,
 .blog-post.post-style-1 .dlab-post-meta:after,
-.owl-dots-primary-full.owl-theme .owl-dots .owl-dot span, 
+.owl-dots-primary-full.owl-theme .owl-dots .owl-dot span,
 .owl-dots-primary-big.owl-theme .owl-dots .owl-dot span,
 .service-media-bx:after,
 .service-box.style3 .icon-bx-wraper:after,
@@ -78,40 +78,42 @@ button.scroltop,
 .counter-staus-box .play-btn span,
 .dlab-team1:hover .dlab-info,
 .dlab-team1:hover .dlab-info:after,
-.ext-sidebar-menu.sidebar-widget ul.menu li:hover a, 
-.ext-sidebar-menu.sidebar-widget ul.menu li.current-menu-item a, 
-.ext-sidebar-menu ul.menu li:hover a, 
+.ext-sidebar-menu.sidebar-widget ul.menu li:hover a,
+.ext-sidebar-menu.sidebar-widget ul.menu li.current-menu-item a,
+.ext-sidebar-menu ul.menu li:hover a,
 .ext-sidebar-menu ul.menu li.active a,
 .download-file,
-.tabs-site-button .nav-tabs li a.active:focus, 
-.tabs-site-button .nav-tabs li a.active:hover, 
+.tabs-site-button .nav-tabs li a.active:focus,
+.tabs-site-button .nav-tabs li a.active:hover,
 .tabs-site-button .nav-tabs li a.active,
-.header-curve.ext-header .logo-header:before, 
-.header-curve.ext-header .logo-header:after, 
-.header-curve.ext-header .extra-nav:before, 
-.header-curve.ext-header .extra-nav:after, 
-.social-curve:after, .social-curve:before,
+.header-curve.ext-header .logo-header:before,
+.header-curve.ext-header .logo-header:after,
+.header-curve.ext-header .extra-nav:before,
+.header-curve.ext-header .extra-nav:after,
+.social-curve:after,
+.social-curve:before,
 [class*="list-"].list-box > li:before,
 .testimonial-12 .testimonial-detail,
-.pagination-bx.primary .pagination > li > a, 
+.pagination-bx.primary .pagination > li > a,
 .pagination-bx.primary .pagination > li > span,
-.dlab-team5 .dlab-border-left:after, 
-.dlab-team5 .dlab-border-left:before, 
-.dlab-team5 .dlab-border-right:before, 
+.dlab-team5 .dlab-border-left:after,
+.dlab-team5 .dlab-border-left:before,
+.dlab-team5 .dlab-border-right:before,
 .dlab-team5 .dlab-border-right:after,
-.dlab-team4 .dlab-social-icon li a.site-button:hover, 
+.dlab-team4 .dlab-social-icon li a.site-button:hover,
 .dlab-team5 .dlab-social-icon li a.site-button:hover,
 .dlab-team6 .dlab-position,
-.dlab-team6 .dlab-title:before, 
+.dlab-team6 .dlab-title:before,
 .dlab-team6 .dlab-title:after,
-.dlab-team6 .dlab-info:before, 
+.dlab-team6 .dlab-info:before,
 .dlab-team6 .dlab-info:after,
 .dlab-team9 .dlab-media.dlab-media-right .dlab-info-has,
 .dlab-team9 .dlab-title,
 .dlab-team11 .dlab-info,
-.lg-actions .lg-next, 
-.lg-actions .lg-prev, 
-.lg-sub-html, .lg-toolbar,
+.lg-actions .lg-next,
+.lg-actions .lg-prev,
+.lg-sub-html,
+.lg-toolbar,
 .widget_getintuch-pro-details .pro-details i,
 .exhibition-carousel:after,
 .service-box.style5 .icon-content .link-btn,
@@ -128,19 +130,19 @@ button.scroltop,
 .request-form .request-form-header,
 .request-form .input-group:after,
 .icon-bx-ho [class*="icon-bx-"]:after,
-.header-sidenav .is-fixed .extra-nav, 
+.header-sidenav .is-fixed .extra-nav,
 .header-sidenav .extra-nav,
 .header-nav .nav > li > a:after,
 .box-header .extra-nav .site-button:after,
 .filters2 ul li a:after,
-.navstyle3 .header-nav .nav > li > .mega-menu, 
+.navstyle3 .header-nav .nav > li > .mega-menu,
 .navstyle3 .header-nav .nav > li .sub-menu,
 .frame-box .site-header.center .is-fixed .container > .logo-header,
 .header-nav .nav > li .mega-menu > li > ul li > a:after,
 .header-nav .nav > li .sub-menu li > a:after,
 .searchform input[type="submit"],
-.widget_calendar table tbody td#today{
-    background-color: #ff5e14;
+.widget_calendar table tbody td#today {
+  background-color: #ff5e14;
 }
 
 /*Hex color :hover */
@@ -149,49 +151,49 @@ button.scroltop,
 .site-button:focus,
 .active > .site-button,
 .bg-primary-dark,
-.pagination > li > a:hover, 
-.pagination > li > span:hover, 
-.pagination > li > a:focus, 
-.pagination > li > span:focus ,
-.pagination > .active > a, 
-.pagination > .active > span, 
-.pagination > .active > a:hover, 
-.pagination > .active > span:hover, 
-.pagination > .active > a:focus, 
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
 .pagination > .active > span:focus,
 .sidenav .closebtn:hover,
 .sidenav .closebtn:focus,
-.owl-btn-1.primary .owl-prev:hover, 
+.owl-btn-1.primary .owl-prev:hover,
 .owl-btn-1.primary .owl-next:hover,
-.owl-btn-2.primary .owl-prev:hover, 
+.owl-btn-2.primary .owl-prev:hover,
 .owl-btn-2.primary .owl-next:hover,
 .comments-area .comment-form p input[type="submit"]:hover,
 .comments-area .comment-form p input[type="submit"]:focus,
 .comments-area .comment-form p input[type="submit"]:active,
-.pagination-bx.primary .pagination > li > a:hover, 
-.pagination-bx.primary .pagination > li > span:hover, 
-.pagination-bx.primary .pagination > li.active > span, 
+.pagination-bx.primary .pagination > li > a:hover,
+.pagination-bx.primary .pagination > li > span:hover,
+.pagination-bx.primary .pagination > li.active > span,
 .pagination-bx.primary .pagination > li.active > a,
 .box-header .extra-nav .site-button:hover:after,
 .comment-form .form-submit input:active,
 .comment-form .form-submit input:focus,
 .comment-form .form-submit input:hover,
-.searchform input[type="submit"]:hover, 
-.searchform input[type="submit"]:focus, 
+.searchform input[type="submit"]:hover,
+.searchform input[type="submit"]:focus,
 .searchform input[type="submit"]:active,
 .btnhover14::after,
 .btnhover13::after,
-.btnhover15::after{
-    background-color: #ff8022;
+.btnhover15::after {
+  background-color: #ff8022;
 }
-.about-us .dlab-tabs .nav-tabs li.active{
-	border-right: 4px solid #ff8022;
+.about-us .dlab-tabs .nav-tabs li.active {
+  border-right: 4px solid #ff8022;
 }
 /* Rgba color */
 .dlab-info-has.bg-primary,
 .dlab-info-has.bg-secondry:hover,
 .tp-bannertimer.tp-bottom {
-    background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(26, 188, 156, 0.9);
 }
 /*===================== 
 	Premery text color 
@@ -201,7 +203,16 @@ a,
 .primary li:before,
 .breadcrumb-row ul li a,
 .header-nav .nav > li.active > a,
-.header-nav .nav > li.current-menu-item > a .header-nav .nav > li .sub-menu li a:hover,
+.header-nav
+  .nav
+  > li.current-menu-item
+  > a
+  .header-nav
+  .nav
+  > li
+  .sub-menu
+  li
+  a:hover,
 .header-nav .nav > li:hover > a,
 .header-nav .nav > li .mega-menu > li ul a:hover,
 .header-nav .nav > li .sub-menu li:hover > a,
@@ -249,9 +260,9 @@ h6 a:hover,
 .site-footer.style2 .widget.widget_getintuch li i,
 .call-action.style2 i.call-icon:after,
 .testimonial-15 .testimonial-position,
-.section-full.bg-black .testimonial-15 .quote-left:before, 
+.section-full.bg-black .testimonial-15 .quote-left:before,
 .section-full.bg-black .testimonial-15 .quote-right:after,
-.section-full.bg-secondry .testimonial-15 .quote-left:before, 
+.section-full.bg-secondry .testimonial-15 .quote-left:before,
 .section-full.bg-secondry .testimonial-15 .quote-right:after,
 .testimonial-14 .testimonial-detail:after,
 .testimonial-14.quote-left:before,
@@ -260,32 +271,32 @@ h6 a:hover,
 [class*="list-"].style2.list-box > li:after,
 [class*="list-"].list-box.reverse > li:before,
 .testimonial-13 .quote-left:before,
-.testimonial-15 .quote-left:before, 
+.testimonial-15 .quote-left:before,
 .testimonial-15 .quote-right:after,
-.testimonial-9 .testimonial-position, 
+.testimonial-9 .testimonial-position,
 .testimonial-10 .testimonial-position,
-.site-filters.style1 li.active a, 
+.site-filters.style1 li.active a,
 .site-filters.style1.white li.active a,
 .overlay-icon .check-km i.icon-bx-xs,
 .service-list ul li i,
 .project-owbx i,
 .filters2 ul li a i,
-.navstyle1 .main-bar.bg-primary .header-nav .nav > li.active > a, 
+.navstyle1 .main-bar.bg-primary .header-nav .nav > li.active > a,
 .navstyle1 .main-bar.bg-primary .header-nav .nav > li:hover > a,
 .frame-box .project-bx .info .title a,
 .dlab-box-bg .icon-box-btn .site-button,
 .service-box-4 .service-images i,
 .list-2 li:hover:before,
-.widget_rss ul .rss-date{
-    color: #ff5e14;
+.widget_rss ul .rss-date {
+  color: #ff5e14;
 }
 
 @media only screen and (max-width: 991px) {
-	.nav-dark.header-nav .nav > li > a:hover, 
-	.nav-dark.header-nav .nav > li > a:active, 
-	.nav-dark.header-nav .nav > li > a:focus{
-		color: #ff5e14;
-	}
+  .nav-dark.header-nav .nav > li > a:hover,
+  .nav-dark.header-nav .nav > li > a:active,
+  .nav-dark.header-nav .nav > li > a:focus {
+    color: #ff5e14;
+  }
 }
 /*===================== 
 	Premery border color 
@@ -297,40 +308,40 @@ h6 a:hover,
 button.scroltop,
 blockquote,
 .widget_gallery li:hover,
-.owl-slider-banner .owl-theme .owl-dots .owl-dot.active, 
+.owl-slider-banner .owl-theme .owl-dots .owl-dot.active,
 .owl-slider-banner .owl-theme .owl-dots .owl-dot:hover,
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 input[type="checkbox"]:checked + label:before,
-input[type="checkbox"] + label:hover:before, 
+input[type="checkbox"] + label:hover:before,
 input[type="radio"] + label:hover:before,
-.owl-theme.dots-style-3 .owl-dots .owl-dot.active, 
+.owl-theme.dots-style-3 .owl-dots .owl-dot.active,
 .owl-theme.dots-style-3 .owl-dots .owl-dot:hover,
 .side-bar .widget_tag_cloud a:hover,
 .counter-style-5:hover,
-.lg-outer .lg-thumb-item.active, 
+.lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover,
 .site-filters .site-button.outline,
 button.scroltop.style3:after,
-.navstyle3 .header-nav .nav > li > .mega-menu, 
+.navstyle3 .header-nav .nav > li > .mega-menu,
 .navstyle3 .header-nav .nav > li .sub-menu,
-.site-button.outline{
-    border-color: #ff5e14;
+.site-button.outline {
+  border-color: #ff5e14;
 }
-.owl-item.active.center .testimonial-8 .testimonial-text:after{
-	border-top:25px solid #ff5e14;
+.owl-item.active.center .testimonial-8 .testimonial-text:after {
+  border-top: 25px solid #ff5e14;
 }
-.dlab-tabs.border-top .nav-tabs > li.active > a{
-	border-top-color: #ff5e14;
+.dlab-tabs.border-top .nav-tabs > li.active > a {
+  border-top-color: #ff5e14;
 }
 .comments-area .comment-form p input[type="submit"]:hover,
 .comments-area .comment-form p input[type="submit"]:focus,
-.comments-area .comment-form p input[type="submit"]:active{
-	border-color: #ff8022;
+.comments-area .comment-form p input[type="submit"]:active {
+  border-color: #ff8022;
 }
 .dlab-team4 .dlab-media:after {
-    border-color: #ff5e14 #e6e5e5 #e6e5e5 #ff5e14!important;
+  border-color: #ff5e14 #e6e5e5 #e6e5e5 #ff5e14 !important;
 }
 
 /*===================== 
@@ -338,42 +349,43 @@ button.scroltop.style3:after,
  =====================*/
 .bg-secondry,
 .testimonial-14 .testimonial-detail,
-.lg-outer .lg-toogle-thumb, 
-.lg-outer .lg-thumb-outer, 
-.lg-outer .lg-img-wrap, .lg-outer .lg-item,
-.frame-box .header-nav .nav > li.active > a, 
-.frame-box .header-nav .nav > li > a:hover{
-    background-color: #e44800;
+.lg-outer .lg-toogle-thumb,
+.lg-outer .lg-thumb-outer,
+.lg-outer .lg-img-wrap,
+.lg-outer .lg-item,
+.frame-box .header-nav .nav > li.active > a,
+.frame-box .header-nav .nav > li > a:hover {
+  background-color: #e44800;
 }
 
 /*===================== 
 	Secondery text color
  =====================*/
 .text-secondry {
-    color: #2d3239;
+  color: #2d3239;
 }
 
 /*===================== 
 	New Important
  =====================*/
 a.text-primary:hover,
-button.scroltop.white{
-	color: #ff8022 !important;
+button.scroltop.white {
+  color: #ff8022 !important;
 }
 .text-primary,
 .site-footer .footer-bottom a:hover,
 footer .widget_services ul li a:hover,
-.overlay-icon .check-km i.icon-bx-xs{
-	color: #ff5e14 !important;
+.overlay-icon .check-km i.icon-bx-xs {
+  color: #ff5e14 !important;
 }
 .bg-primary,
 .pagination-bx.gray .pagination > li.active > a,
-.pagination-bx.gray .pagination > li > a:hover{
-	background-color: #ff5e14 !important;
+.pagination-bx.gray .pagination > li > a:hover {
+  background-color: #ff5e14 !important;
 }
 a.bg-primary:focus,
-a.bg-primary:hover{
-	background-color: #ff8022 !important;
+a.bg-primary:hover {
+  background-color: #ff8022 !important;
 }
 .testimonial-14,
 .dlab-team11-area.dots-theme.owl-theme .owl-dots .owl-dot.active span,
@@ -381,20 +393,20 @@ a.bg-primary:hover{
 .about-year span,
 .img-ho1:after,
 .frame-box .about-box,
-.service-box-4:hover .service-images img{
-	border-color: #ff5e14!important;	
+.service-box-4:hover .service-images img {
+  border-color: #ff5e14 !important;
 }
 .testimonial-14 .testimonial-detail:after,
-.testimonial-14 .testimonial-detail:before{
-	border-top-color: #ff5e14!important;
+.testimonial-14 .testimonial-detail:before {
+  border-top-color: #ff5e14 !important;
 }
-.contact-no .contact-left{
-	border-right-color: #ff5e14!important;
+.contact-no .contact-left {
+  border-right-color: #ff5e14 !important;
 }
-button.scroltop{
-	box-shadow: -4px 4px 24px -10px #ff5e14!important;
+button.scroltop {
+  box-shadow: -4px 4px 24px -10px #ff5e14 !important;
 }
-.navstyle2 .header-nav .nav > li.active > a:after, 
+.navstyle2 .header-nav .nav > li.active > a:after,
 .navstyle2 .header-nav .nav > li:hover > a:after {
-    box-shadow: inset 0 0 0 2px #ff5e14;
+  box-shadow: inset 0 0 0 2px #ff5e14;
 }
