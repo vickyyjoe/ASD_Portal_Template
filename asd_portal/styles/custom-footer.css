@@ -1,0 +1,60 @@
+.custom-footer-color {
+  background: #f0e3cc !important;
+}
+
+.site-footer.style1 .footer-bottom {
+  background-color: #7aa613 !important;
+}
+
+.fa-youtube:before {
+  color: white;
+}
+
+.fa-linkedin:before {
+  color: white;
+}
+
+.site-footer.style1 .footer-title {
+  color: black !important;
+}
+
+.site-footer.style1 .list-2 li a {
+  text-decoration: none !important;
+}
+
+footer li {
+  line-height: 14px !important;
+}
+
+.site-footer.style1 .footer-top {
+  border-top: 2px solid #7aa613;
+}
+
+footer a,
+footer a:visited {
+  color: black !important;
+}
+
+.horizontal {
+  display: inline-block !important;
+}
+
+.custom {
+  width: 100% !important;
+}
+
+.footer-logo-custom {
+  max-width: 50% !important;
+}
+
+.site-footer.style1 .list-2 li {
+  font-size: 16px !important;
+}
+
+.footer-content {
+  font-size: 16px !important;
+}
+
+.fa-youtube-play:before {
+  color: white !important;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Link from "next/link";
 
 class Footer extends Component {
   render() {
@@ -15,17 +15,17 @@ class Footer extends Component {
                   data-wow-delay="0.6s"
                 >
                   <div class="ft-contact-bx">
-                    <img src={("/images/icon/icon1.png")} alt="" />
+                    <img src={"/images/icon/icon1.png"} alt="" />
                     <h4 class="title">Address</h4>
                     <p>8901 Marmora Road Chi Minh City, Vietnam</p>
                   </div>
                   <div class="ft-contact-bx">
-                    <img src={("/images/icon/icon2.png")} alt="" />
+                    <img src={"/images/icon/icon2.png"} alt="" />
                     <h4 class="title">Phone</h4>
                     <p>8901 Marmora Road Chi Minh City, Vietnam</p>
                   </div>
                   <div class="ft-contact-bx">
-                    <img src={("/images/icon/icon3.png")} alt="" />
+                    <img src={"/images/icon/icon3.png"} alt="" />
                     <h4 class="title">Email Contact</h4>
                     <p>8901 Marmora Road Chi Minh City, Vietnam</p>
                   </div>
@@ -111,39 +111,21 @@ class Footer extends Component {
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard.
                     </p>
-                  
-                      Read More
-                
+                    Read More
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                   <div class="widget">
                     <h4 class="footer-title">Usefull div</h4>
                     <ul class="list-2">
-                      <li>
-                       About Us
-                      </li>
-                      <li>
-                    Blog
-                      </li>
-                      <li>
-                        Services
-                      </li>
-                      <li>
-                        Privacy Policy
-                      </li>
-                      <li>
-                        Projects 
-                      </li>
-                      <li>
-                      Help Desk 
-                      </li>
-                      <li>
-                       Shop
-                      </li>
-                      <li>
-                       Contact
-                      </li>
+                      <li>About Us</li>
+                      <li>Blog</li>
+                      <li>Services</li>
+                      <li>Privacy Policy</li>
+                      <li>Projects</li>
+                      <li>Help Desk</li>
+                      <li>Shop</li>
+                      <li>Contact</li>
                     </ul>
                   </div>
                 </div>
@@ -190,24 +172,25 @@ class Footer extends Component {
             <div class="container">
               <div class="footer-bottom-in">
                 <div class="footer-bottom-logo">
-                 
-                    <img src={("kalbe.jpg")} alt="" width={200} height={100}/>
-                 
+                  <Link href={"/"}>
+                    <img src={"kalbe.jpg"} alt="" width={150} height={100}/>
+                  </Link>
                 </div>
                 <div class="footer-bottom-social">
                   <ul class="dlab-social-icon dez-border">
                     <li>
-                      <div class="fa fa-facebook" to={"/#"}></div>
+                      <Link href={"/#"}>
+                        <a>
+                          <div className="fa fa-linkedin"></div>
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <div class="fa fa-twitter" to={"/#"}></div>
+                      <a>
+                        <div class="fa fa-youtube-play" to={"/#"}></div>
+                      </a>
                     </li>
-                    <li>
-                      <div class="fa fa-divedin" to={"/#"}></div>
-                    </li>
-                    <li>
-                      <div class="fa fa-pinterest" to={"/#"}></div>
-                    </li>
+                    
                   </ul>
                 </div>
               </div>

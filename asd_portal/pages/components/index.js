@@ -49,7 +49,7 @@ export class index extends Component {
         <div class="section-full bg-gray content-inner">
           <div class="container">
             <div class="section-head text-center">
-              <h2 class="title"> Our Services</h2>
+              <h2 class="title text-primary" > Our Services</h2>
               <p>
                 There are many variations of passages of Lorem Ipsum typesetting
                 industry has been the industry's standard dummy text ever since
