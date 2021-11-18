@@ -6,7 +6,7 @@ import PortfolioCard from "./components/element/PortfolioCard";
 
 const bg = "/images/banner/bnr4.jpg";
 
-export class Portfolio extends Component {
+export class Portofolio extends Component {
   render() {
     return (
       <>
@@ -38,4 +38,4 @@ export class Portfolio extends Component {
     );
   }
 }
-export default Portfolio;
+export default Portofolio;

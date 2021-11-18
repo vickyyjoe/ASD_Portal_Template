@@ -1,0 +1,49 @@
+li > ul {
+  margin-left: 0;
+}
+
+.header-nav .nav > li.active > a,
+.header-nav .nav > li:hover > a {
+  color: var(--light-green) !important;
+}
+
+.header-nav .nav > li.active > a {
+  color: var(--light-green) !important;
+}
+
+.header-nav .nav > li > a:hover {
+  color: var(--light-green) !important;
+}
+
+.header-nav .nav > li.active > a:after,
+.header-nav .nav > li > a:after {
+  background-color: var(--light-green) !important;
+}
+
+.header-nav .nav > li .sub-menu li:hover > a {
+  color: var(--light-green) !important;
+}
+
+.header-nav .nav > li .sub-menu li:hover > a {
+  color: var(--light-green) !important;
+}
+
+.main-bar {
+  height: 100px;
+}
+
+.header-nav .nav > li > a {
+  height: 100px;
+  padding: 40px 17px 22px 17px !important;
+}
+
+
+.navbar-toggler {
+  margin: 40px 0 18px 15px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav.navbar-nav li a i.fa-chevron-down {
+    background-color: var(--light-green) !important;
+  }
+}
