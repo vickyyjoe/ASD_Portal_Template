@@ -78,3 +78,6 @@
 .recletter {
   padding-top: 100px;
 }
+.boxshadow {
+  box-shadow: 0 0 14px 0 rgb(0 0 0 / 10%);
+}

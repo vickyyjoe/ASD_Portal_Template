@@ -9,9 +9,9 @@ export class ProfileDetails2 extends Component {
       <>
         <Header></Header>
         <div class="page-content bg-white">
-          <div className="container borderer clearfix paddingnull">
+          <div className="container clearfix paddingnull boxshadow">
             <div className="bgimage1 tinggi overlay-black-dark bg-img-fix"></div>
-            <div className="main1 clearfix">
+            <div className=" container main1 clearfix">
               <div className="row clearfix">
                 <div className="left1 col-lg-4">
                   <div className="photo clearfix">
