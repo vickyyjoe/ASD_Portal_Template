@@ -4,3 +4,77 @@
 .falinkwarna:hover {
   color: #333333;
 }
+.colorfix {
+  color: #00570a;
+}
+.borderer {
+  border: 1px solid black;
+}
+.bgimage {
+  /* The image used */
+  background: url("/images/background/bg19.jpg");
+}
+
+.paddingnull {
+  padding: 0;
+}
+
+.tinggi {
+  min-height: 300px;
+}
+
+.bgimage1 {
+  background: #eee;
+  background-image: url("/images/background/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: red;
+  height: 250px;
+}
+@media (max-width: 800px) {
+  .bgimage1 {
+    height: 150px;
+  }
+}
+.main1 {
+  padding: 20px 20px 0px 20px;
+}
+.left1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.photo {
+  width: 200px;
+  height: 200px;
+  margin-top: -40%;
+  border-radius: 100px;
+  margin-bottom: 0;
+}
+.right1 {
+  padding: 0 25px 0 25px !important;
+}
+.name1 {
+  margin-top: 20px;
+}
+.borderradi {
+  border-radius: 20px;
+}
+.stats {
+  margin-top: 25px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+}
+.number-stat {
+  padding: 0px;
+  font-size: 20pt;
+  font-weight: bold;
+}
+.desc-stat {
+  margin-top: -15px;
+}
+.recletter {
+  padding-top: 100px;
+}

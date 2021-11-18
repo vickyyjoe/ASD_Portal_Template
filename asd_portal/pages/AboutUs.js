@@ -25,13 +25,13 @@ export class AboutUs extends Component {
           >
             <div class="container">
               <div class="dlab-bnr-inr-entry align-m text-center">
-                <h1 class="text-white">About us 1</h1>
+                <h1 class="text-white">About us</h1>
                 <div class="breadcrumb-row">
                   <ul class="list-inline">
                     <li>
                       <a href="/">Home</a>
                     </li>
-                    <li>About us 1</li>
+                    <li>About us</li>
                   </ul>
                 </div>
               </div>
