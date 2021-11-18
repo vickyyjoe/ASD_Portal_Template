@@ -3,15 +3,20 @@ import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PartnersCarousel from "./components/element/PartnersCarousel";
+import Head from "next/head";
 
 var bnr3 = "/images/banner/bnr3.jpg";
 var bg1 = "/images/background/bg-video.png";
 var bg2 = "/images/background/bg1.jpg";
 
-export class ProjectDetails2 extends Component {
+export class AboutUs extends Component {
   render() {
     return (
       <>
+      <Head>
+          <title>About Us</title>
+          <link rel="shortcut icon" href="kalbe.ico" />
+        </Head>
         <Header></Header>
         <div class="page-content bg-white">
           <div
@@ -226,4 +231,4 @@ export class ProjectDetails2 extends Component {
   }
 }
 
-export default ProjectDetails2;
+export default AboutUs;

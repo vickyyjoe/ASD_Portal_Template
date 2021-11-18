@@ -2,12 +2,18 @@ import { Component } from "react";
 import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Head from "next/head";
+
 
 const bg = ('/images/banner/bnr4.jpg')
 export class ProjectDetails extends Component {
   render() {
     return (
       <>
+      <Head>
+          <title>Project Detail</title>
+          <link rel="shortcut icon" href="kalbe.ico" />
+        </Head>
         <Header></Header>
         <div class="page-content bg-white">
           <div

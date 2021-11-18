@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PortfolioCard from "./components/element/PortfolioCard";
+import Head from "next/head";
 
 const bg = "/images/banner/bnr4.jpg";
 
@@ -10,6 +11,10 @@ export class Portofolio extends Component {
   render() {
     return (
       <>
+      <Head>
+          <title>Portofolio</title>
+          <link rel="shortcut icon" href="kalbe.ico" />
+        </Head>
         <Header />
         <div class="page-content bg-white">
           <div

@@ -47,7 +47,7 @@ class ServicesSlider3 extends Component {
                                 <div>
                                     <img src={item.image} width="250" height="250"  alt=""/>
                                 </div>
-                                <h3 class="title">{item.serviceName}</h3>
+                                <h5 class="title">{item.serviceName}</h5>
                                 {this.props.style4 && <div class="no">{id}</div> }
                             </div>
                         </div>

@@ -173,7 +173,7 @@ class Header extends Component {
                             : "has-mega-menu"
                         }
                       >
-                        <Link href={"/ProjectDetails"}>About Us</Link>
+                        <Link href={"/AboutUs"}>About Us</Link>
                       </li>
 
                       <li
