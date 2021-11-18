@@ -9,9 +9,9 @@ export class ProfileDetails2 extends Component {
       <>
         <Header></Header>
         <div class="page-content bg-white">
-          <div className="container clearfix paddingnull boxshadow">
-            <div className="bgimage1 tinggi overlay-black-dark bg-img-fix"></div>
-            <div className=" container main1 clearfix">
+          <div className="container clearfix paddingnull boxshadow m-b30">
+            <div className="bgimage1 tinggi overlay-black-dark bg-img-fix "></div>
+            <div className=" container main1 clearfix ">
               <div className="row clearfix">
                 <div className="left1 col-lg-4">
                   <div className="photo clearfix">
@@ -49,11 +49,11 @@ export class ProfileDetails2 extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="right1 col-lg-8">
+                <div className="right1 col-lg-8 m-b30">
                   <div className="recletter">
                     <h5 class="name1">Recommendation Letter</h5>
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-4">
                         <div class="dlab-box m-b30 dlab-team1">
                           <div class="dlab-media">
                             <img
@@ -69,7 +69,7 @@ export class ProfileDetails2 extends Component {
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3">
+                      <div class="col-lg-4">
                         <div class="dlab-box m-b30 dlab-team1">
                           <div class="dlab-media">
                             <img
@@ -90,33 +90,30 @@ export class ProfileDetails2 extends Component {
                 </div>
               </div>
             </div>
-            {/* <div className="container">
+          </div>
+
+          <div className="container clearfix boxshadow m-b30">
+            <div className="container">
               <div className="row">
-                shibal
-                <div className="container clearfix">
-                <div className="row">
-                  <div class="col-lg-3 positioned">
-                    <div class="dlab-box m-b30 dlab-team4">
-                      <div class="dlab-media">
-                        <a href="/">
-                          <img
-                            alt=""
-                            src={"/images/our-team/team-bx/pic1.jpg"}
-                          />
-                        </a>
-                      </div>
-                      <div class="dlab-info">
-                        <h4 class="dlab-title">
-                          <a href="/">Nashid Martines</a>
-                        </h4>
-                        <span class="dlab-position">Director</span>
-                      </div>
-                    </div>
-                  </div>
+                <div className="col-lg-2">
+                  <h4 class="name1">Status</h4>
+                </div>
+                <div className="col-lg-10">
+                  <p class="name1">Available</p>
                 </div>
               </div>
+              <div className="row">
+                <div className="col-lg-3">
+                  <h5>Game Web Design</h5>
+                </div>
+                <div className="col-lg-3">
+                  <p>Developer</p>
+                </div>
+                <div className="col-lg-6">
+                  <h5>September 2021 - Desember 2021</h5>
+                </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
         <Footer></Footer>
