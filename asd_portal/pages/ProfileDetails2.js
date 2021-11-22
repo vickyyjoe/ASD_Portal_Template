@@ -1,7 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Component } from "react";
-// import { Progress } from "reactstrap";
+import { Progress } from "reactstrap";
 import Testmonial10 from "./components/element/Testimonial";
 import { Badge } from "reactstrap";
 import Avatar from "react-avatar";
@@ -54,11 +54,11 @@ export class ProfileDetails2 extends Component {
                 <div className="row">
                   <div className="col-sm-6">
                     <h5>Experience</h5>
-                    {/* <Progress
-                        className="borderradi"
-                        color="success borderradi"
-                        value={50}
-                      /> */}
+                    <Progress
+                      className="borderradi"
+                      color="success borderradi"
+                      value={86}
+                    />
                     <div class="stats row">
                       <div class="col-sm-4">
                         <p class="desc-stat">Projects</p>
@@ -75,37 +75,35 @@ export class ProfileDetails2 extends Component {
                     </div>
                   </div>
                   <div className="col">
-                    <h5>Recommendation Letter</h5>
+                    <div className="row">
+                      <div className="col">
+                        <h5>Recommendation Letter</h5>
+                      </div>
+                    </div>
                     <div className="row">
                       <div className="col-sm-4">
-                        <div class="dlab-box m-b30 dlab-team1">
-                          <div class="dlab-media">
-                            <img
-                              width="358"
-                              height="460"
-                              alt=""
-                              src={"/images/our-team/pic1.jpg"}
+                        <div class="dlab-box m-b30 dlab-team3">
+                          <div class="dlab-media text-center">
+                            <Avatar
+                              src="/images/our-team/team-bx/pic1.jpg"
+                              round="50px"
+                              size={75}
                             />
-                          </div>
-                          <div class="dlab-info">
-                            <h4 class="dlab-title">Nashid Martines</h4>
-                            <span class="dlab-position">Director</span>
+                            <h5 class="dlab-title">Nashid Martines</h5>
+                            <p>M.Ti</p>
                           </div>
                         </div>
                       </div>
                       <div className="col-sm-4">
-                        <div class="dlab-box m-b30 dlab-team1">
-                          <div class="dlab-media">
-                            <img
-                              width="358"
-                              height="460"
-                              alt=""
-                              src={"/images/our-team/pic1.jpg"}
+                        <div class="dlab-box m-b30 dlab-team3">
+                          <div class="dlab-media text-center">
+                            <Avatar
+                              src="/images/our-team/team-bx/pic1.jpg"
+                              round="50px"
+                              size={75}
                             />
-                          </div>
-                          <div class="dlab-info">
-                            <h4 class="dlab-title">Nashid Martines</h4>
-                            <span class="dlab-position">Director</span>
+                            <h5 class="dlab-title">Nashid Martines</h5>
+                            <p>M.Ti</p>
                           </div>
                         </div>
                       </div>
