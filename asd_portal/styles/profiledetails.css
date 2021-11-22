@@ -1,0 +1,60 @@
+.bgimage {
+  /* The image used */
+  background: url("/images/background/bg19.jpg");
+}
+
+.paddinglatargambar {
+  padding: 0;
+}
+
+.gambarlatar {
+  background: #eee;
+  background-image: url("/images/background/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: red;
+  height: 250px;
+  width: 100%;
+}
+.halamanmargin {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.photo {
+  margin-top: -100px;
+}
+
+.borderradi {
+  border-radius: 20px;
+}
+.stats {
+  margin-top: 25px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.number-stat {
+  padding: 0px;
+  font-size: 20pt;
+  font-weight: bold;
+}
+.recletter {
+  padding-top: 100px;
+}
+.bayangan {
+  padding: 30px 30px;
+  background: #fff;
+  box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 5%);
+  z-index: 1;
+}
+
+.isimargin {
+  margin-bottom: 30px;
+}
+
+.garisvl {
+  border-left: 2px solid gray;
+  height: 100px;
+  left: 1%;
+  position: relative;
+}
