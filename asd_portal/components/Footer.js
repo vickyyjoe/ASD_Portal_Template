@@ -173,7 +173,7 @@ class Footer extends Component {
               <div class="footer-bottom-in">
                 <div class="footer-bottom-logo">
                   <Link href={"/"}>
-                    <img src={"kalbe.jpg"} alt="" width={150} height={100}/>
+                    <img src={"logo white.png"} alt="" width={70}/>
                   </Link>
                 </div>
                 <div class="footer-bottom-social">

@@ -7,6 +7,7 @@ import { Badge } from "reactstrap";
 import Avatar from "react-avatar";
 import StarRatings from "react-star-ratings";
 
+
 const bg1 = "/images/background/bg1.jpg";
 
 const work1 = "/images/our-work/pic1.jpg";
@@ -15,6 +16,7 @@ export class ProfileDetails2 extends Component {
     return (
       <>
         <Header></Header>
+       
         <div class="page-content bg-gray ">
           <div class="section-full bg-gray m-b30">
             <div class="container">
