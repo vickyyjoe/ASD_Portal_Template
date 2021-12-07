@@ -20,14 +20,30 @@ const url = "https://asd-portal-be.herokuapp.com";
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await axios("https://asd-portal-be.herokuapp.com/our-services");
-  const data = res.data;
+  const [ourServiceRes, TestimonialDataRes] = await Promise.all([
+    fetch("https://asd-portal-be.herokuapp.com/our-services"), 
+    fetch("https://asd-portal-be.herokuapp.com/testimonials")
+  ]);
+  const [ourServices, TestimonialDatas] = await Promise.all([
+    ourServiceRes.json(), 
+    TestimonialDataRes.json()
+  ]);
+
+  // const res = await axios("https://asd-portal-be.herokuapp.com/our-services");
+  // const res2 = await axios("https://asd-portal-be.herokuapp.com/testimonials");
+  // const data = res.data;
+  // const TestimonialData = res.TestimonialData;
 
   // Pass data to the page via props
-  return { props: { data } };
+  return { props: { ourServices,TestimonialDatas} };
 }
 
-function App({ data }) {
+
+
+
+
+
+function App({ ourServices,TestimonialDatas }) {
   return (
     <div className="skin-1">
       <Head>
@@ -72,7 +88,7 @@ function App({ data }) {
             </p>
           </div>
           <div class="section-content row">
-            {data.slice(0,6).map((ourservice) => (
+            {ourServices.slice(0,6).map((ourservice) => (
               <div
                 class="col-md-6 col-lg-4 col-sm-12 service-box style3 wow fadeInUp"
                 data-wow-duration="2s"
@@ -296,7 +312,7 @@ function App({ data }) {
             </div>
           </div>
           <div class="section-content">
-            <Testimonial />
+            <Testimonial data={TestimonialDatas} />
           </div>
         </div>
       </div>
