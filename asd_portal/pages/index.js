@@ -16,11 +16,11 @@ const bg4 = "/1.jpg";
 var bg1 = "/images/background/bg1.jpg";
 var bg2 = "/images/background/bg-video.png";
 
-const url = "http://localhost:1337";
+const url = "https://asd-portal-be.herokuapp.com";
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await axios("http://localhost:1337/our-services");
+  const res = await axios("https://asd-portal-be.herokuapp.com/our-services");
   const data = res.data;
 
   // Pass data to the page via props
@@ -80,11 +80,11 @@ function App({ data }) {
               >
                 <div class="icon-bx-wraper" data-name={ourservice.id}>
                   <div class="icon-lg">
-                    <img src={url + ourservice.Image.formats.small.url} />
+                    <img src={url + ourservice.serviceImage.formats.small.url} />
                   </div>
                   <div class="icon-content">
-                    <h2 class="dlab-tilte">{ourservice.Title}</h2>
-                    <p>{ourservice.Desc}</p>
+                    <h2 class="dlab-tilte">{ourservice.serviceName}</h2>
+                    <p>{ourservice.serviceDesc}</p>
                   </div>
                 </div>
               </div>
