@@ -1,4 +1,4 @@
-import Franchise from "./components/franchise.js";
+import Franchise from "../components/franchise.js";
 import Head from "next/head";
 
 import React, { Component } from "react";

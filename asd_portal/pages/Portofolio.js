@@ -36,7 +36,7 @@ function Portofolio({ portofolio }) {
           </div>
         </div>
 
-        <PortfolioCard portofolio={portofolio} col="col-md-4" />
+        <PortfolioCard col="col-md-4" />
       </div>
       <Footer />
     </>

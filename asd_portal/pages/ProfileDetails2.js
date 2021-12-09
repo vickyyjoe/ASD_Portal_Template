@@ -1,8 +1,8 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import { Component } from "react";
 import { Progress } from "reactstrap";
-import Testmonial10 from "./components/element/Testimonial";
+import Testmonial10 from "../components/element/Testimonial";
 import { Badge } from "reactstrap";
 import Avatar from "react-avatar";
 import StarRatings from "react-star-ratings";
