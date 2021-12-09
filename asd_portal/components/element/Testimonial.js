@@ -46,7 +46,7 @@ function Testmonial10({ testimonialData }) {
     autoplay: false,
     responsive: responsive(),
   };
-  console.log(testimonialData)
+  console.log(testimonialData);
   return (
     <>
       <Slider
@@ -54,29 +54,31 @@ function Testmonial10({ testimonialData }) {
         className="testimonial-two-dotsl dots-long d-primary btn-style-1"
       >
         {testimonialData &&
-          this.testimonialData.map((testimonialData) => (
+          testimonialData.map((testimonialData) => (
             <div
-              class="item p-a5 wow fadeInUp"
+              className="item p-a5 wow fadeInUp"
               data-wow-duration="2s"
               data-wow-delay="0.3s"
+              key={testimonialData.id}
             >
-              <div class="testimonial-9">
-                <div class="testimonial-pic radius style1">
+              <div className="testimonial-9">
+                <div className="testimonial-pic radius style1">
                   <img
-                    src={url + testimonialData.testiImage.formats.small.url}
+                    // src={url + testimonialData.testiImage.formats.small.url}
+                    src={testimonialData.testiImage.url}
                     width="100"
                     height="100"
                     alt=""
                   />
                 </div>
-                <div class="testimonial-text">
+                <div className="testimonial-text">
                   <p>{testimonialData.testiDesc}</p>
                 </div>
-                <div class="testimonial-detail">
-                  <strong class="testimonial-name">
+                <div className="testimonial-detail">
+                  <strong className="testimonial-name">
                     {testimonialData.testiUser}
                   </strong>
-                  <span class="testimonial-position">
+                  <span className="testimonial-position">
                     {testimonialData.testiPosition}
                   </span>
                 </div>

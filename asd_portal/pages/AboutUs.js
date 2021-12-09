@@ -1,8 +1,8 @@
 import { Component } from "react";
 import Link from "next/link";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import PartnersCarousel from "./components/element/PartnersCarousel";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import PartnersCarousel from "../components/element/PartnersCarousel";
 import Head from "next/head";
 
 var bnr3 = "/images/banner/bnr3.jpg";

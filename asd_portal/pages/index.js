@@ -19,44 +19,8 @@ var bg2 = "/images/background/bg-video.png";
 const url = "https://asd-portal-be.herokuapp.com";
 const urlCloud = "https://res.cloudinary.com/asd-portal-media/image/upload";
 
-export async function getServerSideProps() {
-  // Fetch data from external API
-  // const [ourServiceRes, TestimonialDataRes] = await Promise.all([
-  //   fetch("https://asd-portal-be.herokuapp.com/our-services"),
-  //   fetch("https://asd-portal-be.herokuapp.com/testimonials")
-  // ]);
-
-  // const [ourServices, TestimonialDatas] = await Promise.all([
-  //   ourServiceRes.json(),
-  //   TestimonialDataRes.json()
-  // ]);
-
-  
-
-  //axios
-
-  // const res = await axios("https://asd-portal-be.herokuapp.com/our-services");
-  // const res2 = await axios("https://asd-portal-be.herokuapp.com/testimonials");
-  // const data = res.data;
-  // const TestimonialData = res.TestimonialData;
-
-  // Pass data to the page via props
-
-  const ourServiceRes = await axios(
-    "https://asd-portal-be.herokuapp.com/our-services"
-  );
-  const ourServices = ourServiceRes.data;
-
-  const TestimonialData = await axios(
-    "https://asd-portal-be.herokuapp.com/Testimonials"
-  );
-  const TestimonialDatas = TestimonialData.data;
-
-  return { props: { ourServices, TestimonialDatas } };
-}
-
 function App({ ourServices, TestimonialDatas }) {
- 
+  console.log(TestimonialDatas);
   return (
     <div className="skin-1">
       <Head>
@@ -90,30 +54,31 @@ function App({ ourServices, TestimonialDatas }) {
         </div>
       </Parallax>
 
-      <div class="section-full bg-gray content-inner">
-        <div class="container">
-          <div class="section-head text-center">
-            <h2 class="title text-primary"> Our Services</h2>
+      <div className="section-full bg-gray content-inner">
+        <div className="container">
+          <div className="section-head text-center">
+            <h2 className="title text-primary"> Our Services</h2>
             <p>
               There are many variations of passages of Lorem Ipsum typesetting
               industry has been the industry's standard dummy text ever since
               the been when an unknown printer.
             </p>
           </div>
-          <div class="section-content row">
+          <div className="section-content row">
             {ourServices &&
-              ourServices.slice(0, 6).map((ourservice) => (
+              ourServices.slice(0, 6).map((ourservice,ourservicekey) => (
                 <div
-                  class="col-md-6 col-lg-4 col-sm-12 service-box style3 wow fadeInUp"
+                  className="col-md-6 col-lg-4 col-sm-12 service-box style3 wow fadeInUp"
                   data-wow-duration="2s"
                   data-wow-delay="0.2s"
+                  key={ourservice.id}
                 >
-                  <div class="icon-bx-wraper" data-name={ourservice.id}>
-                    <div class="icon-lg">
+                  <div className="icon-bx-wraper" data-name={ourservice.id}>
+                    <div className="icon-lg">
                       <img src={ourservice.serviceImage.formats.small.url} />
                     </div>
-                    <div class="icon-content">
-                      <h2 class="dlab-tilte">{ourservice.serviceName}</h2>
+                    <div className="icon-content">
+                      <h2 className="dlab-tilte">{ourservice.serviceName}</h2>
                       <p>{ourservice.serviceDesc}</p>
                     </div>
                   </div>
@@ -124,54 +89,54 @@ function App({ ourServices, TestimonialDatas }) {
       </div>
 
       <div
-        class="section-full overlay-black-dark bg-img-fix text-white content-inner"
+        className="section-full overlay-black-dark bg-img-fix text-white content-inner"
         style={{ backgroundImage: "url(" + bg1 + ")" }}
       >
-        <div class="container">
-          <div class="section-content">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
-                <div class="m-b30 dlab-box text-center counter-style-2">
-                  <div class="icon-lg ">
-                    <i class="flaticon-factory"></i>
+        <div className="container">
+          <div className="section-content">
+            <div className="row">
+              <div className="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                <div className="m-b30 dlab-box text-center counter-style-2">
+                  <div className="icon-lg ">
+                    <i className="flaticon-factory"></i>
                   </div>
-                  <div class="text-blue">
+                  <div className="text-blue">
                     <Counter count={7652} />
                   </div>
-                  <span class="counter-text">Completed Projects</span>
+                  <span className="counter-text">Completed Projects</span>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
-                <div class="m-b30 dlab-box text-center counter-style-2">
-                  <div class="icon-lg ">
-                    <i class="flaticon-worker"></i>
+              <div className="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                <div className="m-b30 dlab-box text-center counter-style-2">
+                  <div className="icon-lg ">
+                    <i className="flaticon-worker"></i>
                   </div>
-                  <div class="text-blue">
+                  <div className="text-blue">
                     <Counter count={4562} />
                   </div>
-                  <span class="counter-text">Happy Clients</span>
+                  <span className="counter-text">Happy Clients</span>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
-                <div class="m-b30 dlab-box text-center counter-style-2">
-                  <div class="icon-lg ">
-                    <i class="flaticon-settings"></i>
+              <div className="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                <div className="m-b30 dlab-box text-center counter-style-2">
+                  <div className="icon-lg ">
+                    <i className="flaticon-settings"></i>
                   </div>
-                  <div class="text-blue">
+                  <div className="text-blue">
                     <Counter count={3569} />
                   </div>
-                  <span class="counter-text">Questions Answered</span>
+                  <span className="counter-text">Questions Answered</span>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
-                <div class="m-b10 dlab-box text-center counter-style-2">
-                  <div class="icon-lg ">
-                    <i class="flaticon-conveyor"></i>
+              <div className="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                <div className="m-b10 dlab-box text-center counter-style-2">
+                  <div className="icon-lg ">
+                    <i className="flaticon-conveyor"></i>
                   </div>
-                  <div class="text-blue">
+                  <div className="text-blue">
                     <Counter count={2089} />
                   </div>
-                  <span class="counter-text">Ordered Coffee's</span>
+                  <span className="counter-text">Ordered Coffee's</span>
                 </div>
               </div>
             </div>
@@ -179,27 +144,27 @@ function App({ ourServices, TestimonialDatas }) {
         </div>
       </div>
 
-      <div class="section-full bg-gray content-inner">
+      <div className="section-full bg-gray content-inner">
         <div
-          class="section-full content-inner bg-white video-section"
+          className="section-full content-inner bg-white video-section"
           style={{ backgroundImage: "url(" + bg2 + ")" }}
         >
-          <div class="container">
-            <div class="section-content">
-              <div class="row d-flex">
-                <div class="col-lg-6 col-md-12 m-b30">
-                  <div class="video-bx">
+          <div className="container">
+            <div className="section-content">
+              <div className="row d-flex">
+                <div className="col-lg-6 col-md-12 m-b30">
+                  <div className="video-bx">
                     <img src={"/images/about/pic5.jpg"} alt="Signature" />
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
-                  <div class="content-bx1">
-                    <h2 class="m-b15 title">
-                      PT Kalbe Farma Tbk.
+                <div className="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
+                  <div className="content-bx1">
+                    <h2 className="m-b15 title">
+                      PT className Farma Tbk.
                       <br />
-                      <span class="text-primary">service, maintenance</span>
+                      <span className="text-primary">service, maintenance</span>
                     </h2>
-                    <p class="m-b30">
+                    <p className="m-b30">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s, when an.
@@ -212,18 +177,18 @@ function App({ ourServices, TestimonialDatas }) {
         </div>
       </div>
 
-      <div class="content-block">
-        <div class="section-full content-inner bg-white">
-          <div class="container">
-            <div class="section-head text-center">
-              <h2 class="title"> Our Team</h2>
+      <div className="content-block">
+        <div className="section-full content-inner bg-white">
+          <div className="container">
+            <div className="section-head text-center">
+              <h2 className="title"> Our Team</h2>
             </div>
-            <div class="row">
-              <div class="col-lg-6 m-b30">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="dlab-box m-b30 dlab-team1">
-                      <div class="dlab-media">
+            <div className="row">
+              <div className="col-lg-6 m-b30">
+                <div className="row">
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="dlab-box m-b30 dlab-team1">
+                      <div className="dlab-media">
                         <img
                           width="358"
                           height="460"
@@ -231,15 +196,15 @@ function App({ ourServices, TestimonialDatas }) {
                           src={"/images/our-team/pic1.jpg"}
                         />
                       </div>
-                      <div class="dlab-info">
-                        <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Director</span>
+                      <div className="dlab-info">
+                        <h4 className="dlab-title">Nashid Martines</h4>
+                        <span className="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="dlab-box m-b30 dlab-team1">
-                      <div class="dlab-media">
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="dlab-box m-b30 dlab-team1">
+                      <div className="dlab-media">
                         <img
                           width="358"
                           height="460"
@@ -247,17 +212,17 @@ function App({ ourServices, TestimonialDatas }) {
                           src={"/images/our-team/pic1.jpg"}
                         />
                       </div>
-                      <div class="dlab-info">
-                        <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Director</span>
+                      <div className="dlab-info">
+                        <h4 className="dlab-title">Nashid Martines</h4>
+                        <span className="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="dlab-box m-b30 dlab-team1">
-                      <div class="dlab-media">
+                <div className="row">
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="dlab-box m-b30 dlab-team1">
+                      <div className="dlab-media">
                         <img
                           width="358"
                           height="460"
@@ -265,15 +230,15 @@ function App({ ourServices, TestimonialDatas }) {
                           src={"/images/our-team/pic1.jpg"}
                         />
                       </div>
-                      <div class="dlab-info">
-                        <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Director</span>
+                      <div className="dlab-info">
+                        <h4 className="dlab-title">Nashid Martines</h4>
+                        <span className="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="dlab-box m-b30 dlab-team1">
-                      <div class="dlab-media">
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="dlab-box m-b30 dlab-team1">
+                      <div className="dlab-media">
                         <img
                           width="358"
                           height="460"
@@ -281,23 +246,23 @@ function App({ ourServices, TestimonialDatas }) {
                           src={"/images/our-team/pic1.jpg"}
                         />
                       </div>
-                      <div class="dlab-info">
-                        <h4 class="dlab-title">Nashid Martines</h4>
-                        <span class="dlab-position">Director</span>
+                      <div className="dlab-info">
+                        <h4 className="dlab-title">Nashid Martines</h4>
+                        <span className="dlab-position">Director</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div className="col-lg-6">
                 <div clas="row">
-                  <div class="section-head text-center">
-                    <h2 class="title"> LeaderBoard</h2>
+                  <div className="section-head text-center">
+                    <h2 className="title"> LeaderBoard</h2>
                   </div>
                 </div>
 
-                <div class="section-content box-sort-in m-b10 p-b0 button-example m-b12">
-                  <ul class="list-cup red list-box">
+                <div className="section-content box-sort-in m-b10 p-b0 button-example m-b12">
+                  <ul className="list-cup red list-box">
                     <li>Aorem ipsum dolor sit amet</li>
                     <li>Aorem ipsum dolor sit amet</li>
                     <li>Borem ipsum dolor sit amet</li>
@@ -316,16 +281,16 @@ function App({ ourServices, TestimonialDatas }) {
         </div>
       </div>
 
-      <div class="section-full bg-gray content-inner-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="sort-title clearfix text-center">
-                <h2 class="title">Testimonial</h2>
+      <div className="section-full bg-gray content-inner-2">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="sort-title clearfix text-center">
+                <h2 className="title">Testimonial</h2>
               </div>
             </div>
           </div>
-          <div class="section-content">
+          <div className="section-content">
             <Testimonial testimonialData={TestimonialDatas} />
           </div>
         </div>
@@ -337,3 +302,17 @@ function App({ ourServices, TestimonialDatas }) {
 }
 
 export default App;
+
+export async function getServerSideProps() {
+  const ourServiceRes = await axios(
+    "https://asd-portal-be.herokuapp.com/our-services?_sort=serviceId"
+  );
+  const ourServices = ourServiceRes.data;
+
+  const TestimonialData = await axios(
+    "https://asd-portal-be.herokuapp.com/Testimonials"
+  );
+  const TestimonialDatas = TestimonialData.data;
+
+  return { props: { ourServices, TestimonialDatas } };
+}
