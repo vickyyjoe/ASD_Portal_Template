@@ -66,7 +66,7 @@ function App({ ourServices, TestimonialDatas }) {
           </div>
           <div className="section-content row">
             {ourServices &&
-              ourServices.slice(0, 6).map((ourservice,ourservicekey) => (
+              ourServices.slice(0, 6).map((ourservice, ourservicekey) => (
                 <div
                   className="col-md-6 col-lg-4 col-sm-12 service-box style3 wow fadeInUp"
                   data-wow-duration="2s"
@@ -160,14 +160,14 @@ function App({ ourServices, TestimonialDatas }) {
                 <div className="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
                   <div className="content-bx1">
                     <h2 className="m-b15 title">
-                      PT className Farma Tbk.
+                      ASD PORTAL
                       <br />
                       <span className="text-primary">service, maintenance</span>
                     </h2>
                     <p className="m-b30">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an.
+                      A helping platform to product digitalizing for user who
+                      needed some dynamic modern feature on their services.
+                      ORDER AND GO!
                     </p>
                   </div>
                 </div>

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import axios from "axios";
 
-// const images = [
+// const images = "https://asd-portal-be.herokuapp.com/portfolios";
+// [
 //   {
 //     id: 1,
 //     name: "agriculture",
@@ -92,43 +94,45 @@ import Link from "next/link";
 //   },
 // ];
 
-const FILTER_DEFS = {
-  agriculture: (image) => image.agriculture,
-  chemical: (image) => image.chemical,
-  mechanical: (image) => image.mechanical,
-  all: (image) => image,
-};
+// const FILTER_DEFS = {
+//   Mobile: (image) => image[("Mobile Apps IOS", "Mobile Apps")],
+//   Web: (image) => image.Web,
+//   all: (image) => image,
+// };
 
-const getFilterSections = (images) => {
-  const filters = ["all"];
-  images.map((image) => {
-    if (filters.indexOf(image.name) === -1) {
-      filters.push(image.name);
-    }
-  });
-  return filters;
-};
+// const getFilterSections = (portofolio) => {
+//   const filters = ["all"];
+//   portofolio.map((image) => {
+//     if (filters.indexOf(image.portfolioCategory) === -1) {
+//       filters.push(image.portfolioCategory);
+//     }
+//   });
+//   return filters;
+// };
 
-const filterImages = (filterKey, images) => {
-  const list = images.filter((image) =>
-    filterKey === "all" ? image : image.name === filterKey
-  );
+// const filterImages = (filterKey, portofolio) => {
+//   const list = portofolio.filter((image) =>
+//     filterKey === "all" ? image : image.portfolioCategory === filterKey
+//   );
 
-  return list;
-};
+//   return list;
+// };
 
-const PortfolioCard = (props) => {
-  const [state, setState] = useState({
-    list: images,
-    filterKey: "all",
-  });
+const PortfolioCard = ({ portfolioCard }) => {
+  // const [state, setState] = useState({
+  //   list: portofolio,
+  //   filterKey: "all",
+  // });
 
-  const { list, filterKey } = state;
+  // const { list, filterKey } = state;
 
-  const filteredList = filterImages(filterKey, list);
-  const filters = getFilterSections(images);
-  const collumnCls = props.col ? props.col : "col-md-3";
+  // const filteredList = filterImages(filterKey, list);
+  // const filters = getFilterSections(portofolio);
+  const collumnCls = portfolioCard.col ? portfolioCard.col : "col-md-3";
 
+  const [filteredData, setfilteredData] = useState();
+
+  const filterHandle = () => {};
   return (
     <div class="content-block">
       <div
@@ -136,10 +140,10 @@ const PortfolioCard = (props) => {
         id="portfolio"
       >
         <div class="container">
-          <div class="site-filters clearfix center  m-b40">
+          {/* <div class="site-filters clearfix center  m-b40">
             {/* FILTERS */}
-            <ul class="filters" data-toggle="buttons">
-              {filters.map((filter) => (
+          {/* <ul class="filters" data-toggle="buttons">
+              {portfolioCard.map((filter) => (
                 <li
                   class="btn"
                   onClick={() => setState({ ...state, filterKey: filter })}
@@ -150,18 +154,21 @@ const PortfolioCard = (props) => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div>  */}
 
           {/* FILTERED PORTFOLIO LIST */}
           <div className="portfolio_area">
             <div className="row portfolio-grid">
-              {filteredList.map((image) => (
+              {portfolioCard.map((portfolioCard) => (
                 <div className={collumnCls}>
                   <div class="dlab-box dlab-gallery-box">
                     <div class="dlab-media dlab-img-overlay1 dlab-img-effect">
                       <Link href="/">
                         <a>
-                          <img src={image.imgUrl} alt="" />
+                          <img
+                            src={portfolioCard.portfolioImage.formats.small.url}
+                            alt=""
+                          />
                         </a>
                       </Link>
                       <div class="overlay-bx">
@@ -182,10 +189,10 @@ const PortfolioCard = (props) => {
                     </div>
                     <div class="dez-info p-a30 bg-white">
                       <p class="dez-title m-t0">
-                        <Link href="/">{image.title}</Link>
+                        <Link href="/">{portfolioCard.portfolioName}</Link>
                       </p>
                       <p>
-                        <small>{image.subTitle}</small>
+                        <small>{portfolioCard.portfolioCategory}</small>
                       </p>
                     </div>
                   </div>

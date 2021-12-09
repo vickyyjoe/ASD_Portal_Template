@@ -9,6 +9,7 @@ import axios from "axios";
 const bg = "/images/banner/bnr4.jpg";
 
 function Portofolio({ portofolio }) {
+  console.log(portofolio);
   return (
     <>
       <Head>
@@ -36,7 +37,7 @@ function Portofolio({ portofolio }) {
           </div>
         </div>
 
-        <PortfolioCard col="col-md-4" />
+        <PortfolioCard col="col-md-4" portfolioCard={portofolio} />
       </div>
       <Footer />
     </>
@@ -47,7 +48,7 @@ export default Portofolio;
 
 export async function getServerSideProps() {
   const portofolioRes = await axios(
-    "https://asd-portal-be.herokuapp.com/our-services?_sort=serviceId"
+    "https://asd-portal-be.herokuapp.com/portfolios"
   );
   const portofolio = portofolioRes.data;
 
