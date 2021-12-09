@@ -36,8 +36,7 @@ import "slick-carousel/slick/slick-theme.css";
 //   },
 // ];
 
-
-function Testmonial10({testimonialData}) {
+function Testmonial10({ testimonialData }) {
   const settings = {
     dots: true,
     infinite: true,
@@ -47,32 +46,43 @@ function Testmonial10({testimonialData}) {
     autoplay: false,
     responsive: responsive(),
   };
+  console.log(testimonialData)
   return (
     <>
       <Slider
         {...settings}
         className="testimonial-two-dotsl dots-long d-primary btn-style-1"
       >
-        {testimonialData && testimonialData.map((item) => (
-          <div
-            class="item p-a5 wow fadeInUp"
-            data-wow-duration="2s"
-            data-wow-delay="0.3s"
-          >
-            <div class="testimonial-9">
-              <div class="testimonial-pic radius style1">
-                <img src={url + item.testiImage.formats.small.url} width="100" height="100" alt="" />
-              </div>
-              <div class="testimonial-text">
-                <p>{item.testiDesc}</p>
-              </div>
-              <div class="testimonial-detail">
-                <strong class="testimonial-name">{item.testiUser}</strong>
-                <span class="testimonial-position">{item.testiPosition}</span>
+        {testimonialData &&
+          this.testimonialData.map((testimonialData) => (
+            <div
+              class="item p-a5 wow fadeInUp"
+              data-wow-duration="2s"
+              data-wow-delay="0.3s"
+            >
+              <div class="testimonial-9">
+                <div class="testimonial-pic radius style1">
+                  <img
+                    src={url + testimonialData.testiImage.formats.small.url}
+                    width="100"
+                    height="100"
+                    alt=""
+                  />
+                </div>
+                <div class="testimonial-text">
+                  <p>{testimonialData.testiDesc}</p>
+                </div>
+                <div class="testimonial-detail">
+                  <strong class="testimonial-name">
+                    {testimonialData.testiUser}
+                  </strong>
+                  <span class="testimonial-position">
+                    {testimonialData.testiPosition}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
       </Slider>
     </>
   );

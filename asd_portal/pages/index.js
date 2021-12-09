@@ -17,17 +17,31 @@ var bg1 = "/images/background/bg1.jpg";
 var bg2 = "/images/background/bg-video.png";
 
 const url = "https://asd-portal-be.herokuapp.com";
+const urlCloud = "https://res.cloudinary.com/asd-portal-media/image/upload";
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const [ourServiceRes, TestimonialDataRes] = await Promise.all([
-    fetch("https://asd-portal-be.herokuapp.com/our-services"), 
-    fetch("https://asd-portal-be.herokuapp.com/testimonials")
-  ]);
-  const [ourServices, TestimonialDatas] = await Promise.all([
-    ourServiceRes.json(), 
-    TestimonialDataRes.json()
-  ]);
+  // const [ourServiceRes, TestimonialDataRes] = await Promise.all([
+  //   fetch("https://asd-portal-be.herokuapp.com/our-services"),
+  //   fetch("https://asd-portal-be.herokuapp.com/testimonials")
+  // ]);
+
+  // const [ourServices, TestimonialDatas] = await Promise.all([
+  //   ourServiceRes.json(),
+  //   TestimonialDataRes.json()
+  // ]);
+
+  const ourServiceRes = await axios(
+    "https://asd-portal-be.herokuapp.com/our-services"
+  );
+  const ourServices = ourServiceRes.data;
+
+  const TestimonialData = await axios(
+    "https://asd-portal-be.herokuapp.com/Testimonials"
+  );
+  const TestimonialDatas = TestimonialData.data;
+
+  //axios
 
   // const res = await axios("https://asd-portal-be.herokuapp.com/our-services");
   // const res2 = await axios("https://asd-portal-be.herokuapp.com/testimonials");
@@ -35,15 +49,12 @@ export async function getServerSideProps() {
   // const TestimonialData = res.TestimonialData;
 
   // Pass data to the page via props
-  return { props: { ourServices,TestimonialDatas} };
+
+  return { props: { ourServices, TestimonialDatas } };
 }
 
-
-
-
-
-
-function App({ ourServices,TestimonialDatas }) {
+function App({ ourServices, TestimonialDatas }) {
+ 
   return (
     <div className="skin-1">
       <Head>
@@ -88,23 +99,24 @@ function App({ ourServices,TestimonialDatas }) {
             </p>
           </div>
           <div class="section-content row">
-            {ourServices.slice(0,6).map((ourservice) => (
-              <div
-                class="col-md-6 col-lg-4 col-sm-12 service-box style3 wow fadeInUp"
-                data-wow-duration="2s"
-                data-wow-delay="0.2s"
-              >
-                <div class="icon-bx-wraper" data-name={ourservice.id}>
-                  <div class="icon-lg">
-                    <img src={url + ourservice.serviceImage.formats.small.url} />
-                  </div>
-                  <div class="icon-content">
-                    <h2 class="dlab-tilte">{ourservice.serviceName}</h2>
-                    <p>{ourservice.serviceDesc}</p>
+            {ourServices &&
+              ourServices.slice(0, 6).map((ourservice) => (
+                <div
+                  class="col-md-6 col-lg-4 col-sm-12 service-box style3 wow fadeInUp"
+                  data-wow-duration="2s"
+                  data-wow-delay="0.2s"
+                >
+                  <div class="icon-bx-wraper" data-name={ourservice.id}>
+                    <div class="icon-lg">
+                      <img src={ourservice.serviceImage.formats.small.url} />
+                    </div>
+                    <div class="icon-content">
+                      <h2 class="dlab-tilte">{ourservice.serviceName}</h2>
+                      <p>{ourservice.serviceDesc}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>
