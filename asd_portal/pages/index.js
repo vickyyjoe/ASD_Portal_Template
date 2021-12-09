@@ -154,7 +154,12 @@ function App({ ourServices, TestimonialDatas }) {
               <div className="row d-flex">
                 <div className="col-lg-6 col-md-12 m-b30">
                   <div className="video-bx">
-                    <img src={"/images/about/pic5.jpg"} alt="Signature" />
+                    <img
+                      src={
+                        "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/carousel_2_a5280729d3.jpg"
+                      }
+                      alt="Signature"
+                    />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
