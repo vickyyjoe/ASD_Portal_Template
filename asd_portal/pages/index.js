@@ -31,15 +31,7 @@ export async function getServerSideProps() {
   //   TestimonialDataRes.json()
   // ]);
 
-  const ourServiceRes = await axios(
-    "https://asd-portal-be.herokuapp.com/our-services"
-  );
-  const ourServices = ourServiceRes.data;
-
-  const TestimonialData = await axios(
-    "https://asd-portal-be.herokuapp.com/Testimonials"
-  );
-  const TestimonialDatas = TestimonialData.data;
+  
 
   //axios
 
@@ -49,6 +41,16 @@ export async function getServerSideProps() {
   // const TestimonialData = res.TestimonialData;
 
   // Pass data to the page via props
+
+  const ourServiceRes = await axios(
+    "https://asd-portal-be.herokuapp.com/our-services"
+  );
+  const ourServices = ourServiceRes.data;
+
+  const TestimonialData = await axios(
+    "https://asd-portal-be.herokuapp.com/Testimonials"
+  );
+  const TestimonialDatas = TestimonialData.data;
 
   return { props: { ourServices, TestimonialDatas } };
 }
@@ -324,7 +326,7 @@ function App({ ourServices, TestimonialDatas }) {
             </div>
           </div>
           <div class="section-content">
-            <Testimonial data={TestimonialDatas} />
+            <Testimonial testimonialData={TestimonialDatas} />
           </div>
         </div>
       </div>
