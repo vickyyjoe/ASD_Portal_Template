@@ -112,12 +112,12 @@ export default OurTeam;
 
 export async function getServerSideProps() {
   const ourTeamHeadRes = await axios(
-    "https://asd-portal-be.herokuapp.com/our-teams?_otRole=Head"
+    "https://asd-portal-be.herokuapp.com/our-teams?_ourteamRole=Head"
   );
   const ourTeamHead = ourTeamHeadRes.data;
 
   const ourTeamInternRes = await axios(
-    "https://asd-portal-be.herokuapp.com/our-teams?_otRole=Intern"
+    "https://asd-portal-be.herokuapp.com/our-teams?_ourteamRole=Intern"
   );
   const ourTeamIntern = ourTeamInternRes.data;
 
