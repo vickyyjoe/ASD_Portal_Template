@@ -158,20 +158,25 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
               <div className="row d-flex">
                 <div className="col-lg-6 col-md-12 m-b30">
                   <div className="video-bx">
-                    <img src={"/images/about/pic5.jpg"} alt="Signature" />
+                    <img
+                      src={
+                        "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/carousel_2_a5280729d3.jpg"
+                      }
+                      alt="Signature"
+                    />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
                   <div className="content-bx1">
                     <h2 className="m-b15 title">
-                      PT className Farma Tbk.
+                      ASD PORTAL
                       <br />
                       <span className="text-primary">service, maintenance</span>
                     </h2>
                     <p className="m-b30">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an.
+                      A helping platform to product digitalizing for user who
+                      needed some dynamic modern feature on their services.
+                      ORDER AND GO!
                     </p>
                   </div>
                 </div>

@@ -27,60 +27,54 @@ const content = [
   },
 ];
 
-class PartnersCarousel extends Component {
-  render() {
-    const settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      autoplay: false,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 4,
-          },
+function PartnersCarousel({ partners }) {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
         },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-          },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
         },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 2,
-          },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
         },
-      ],
-    };
+      },
+    ],
+  };
 
-    const Border = this.props.hideBorder ? "" : "border";
-    const padding = this.props.allowPadding ? "p-a25" : "";
+  const Border = partners.hideBorder ? "" : "border";
+  const padding = partners.allowPadding ? "p-a25" : "";
 
-    return (
-      <>
-        <Slider
-          {...settings}
-          className="client-logo-carousel btn-style-1 icon-2"
-        >
-          {content.map((item, id) => (
-            <div class="item">
-              <div class={`ow-client-logo ${padding}`}>
-                <div class={`client-logo ${Border}`}>
-                  <Link href="#">
-                    <img src={item.logo} alt="" />
-                  </Link>
-                </div>
+  return (
+    <>
+      <Slider {...settings} className="client-logo-carousel btn-style-1 icon-2">
+        {partners.map((partner) => (
+          <div class="item">
+            <div class={`ow-client-logo ${padding}`}>
+              <div class={`client-logo ${Border}`}>
+                <img src={partner.partnerImage.formats.thumbnail.url} alt="" />
               </div>
             </div>
-          ))}
-        </Slider>
-      </>
-    );
-  }
+          </div>
+        ))}
+      </Slider>
+    </>
+  );
 }
+
 export default PartnersCarousel;

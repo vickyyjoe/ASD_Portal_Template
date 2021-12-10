@@ -46,7 +46,7 @@ function Testmonial10({ testimonialData }) {
     autoplay: false,
     responsive: responsive(),
   };
-  console.log(testimonialData);
+  // console.log(testimonialData);
   return (
     <>
       <Slider
