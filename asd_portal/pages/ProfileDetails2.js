@@ -357,28 +357,49 @@ function ProfileDetails2({
                               <li>
                                 <div className="row">
                                   <div className="col-sm-3">
-                                    <p>Game Web Design</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[0]
+                                          .projecthistoryJob
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[0]
+                                            .projecthistoryRole
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.projecthistoryId[0]
+                                          .projecthistoryImage.formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[0]
+                                          .projecthistoryUser
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-3">
                                     <StarRatings
                                       starDimension="25px"
                                       starSpacing="5px"
-                                      rating={3}
+                                      rating={
+                                        profileData.projecthistoryId[0]
+                                          .projecthistoryRating
+                                      }
                                       starRatedColor="black"
                                       numberOfStars={5}
                                       name="rating"
@@ -386,7 +407,12 @@ function ProfileDetails2({
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[0]
+                                            .projecthistoryDesc
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                 </div>
@@ -394,28 +420,49 @@ function ProfileDetails2({
                               <li>
                                 <div className="row">
                                   <div className="col-sm-3">
-                                    <p>Game Web Design</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[1]
+                                          .projecthistoryJob
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[1]
+                                            .projecthistoryRole
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.projecthistoryId[1]
+                                          .projecthistoryImage.formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[1]
+                                          .projecthistoryUser
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-3">
                                     <StarRatings
                                       starDimension="25px"
                                       starSpacing="5px"
-                                      rating={3}
+                                      rating={
+                                        profileData.projecthistoryId[1]
+                                          .projecthistoryRating
+                                      }
                                       starRatedColor="black"
                                       numberOfStars={5}
                                       name="rating"
@@ -423,7 +470,12 @@ function ProfileDetails2({
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[1]
+                                            .projecthistoryDesc
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                 </div>
@@ -431,28 +483,49 @@ function ProfileDetails2({
                               <li>
                                 <div className="row">
                                   <div className="col-sm-3">
-                                    <p>Game Web Design</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[2]
+                                          .projecthistoryJob
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[2]
+                                            .projecthistoryRole
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.projecthistoryId[2]
+                                          .projecthistoryImage.formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[2]
+                                          .projecthistoryUser
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-3">
                                     <StarRatings
                                       starDimension="25px"
                                       starSpacing="5px"
-                                      rating={3}
+                                      rating={
+                                        profileData.projecthistoryId[2]
+                                          .projecthistoryRating
+                                      }
                                       starRatedColor="black"
                                       numberOfStars={5}
                                       name="rating"
@@ -460,7 +533,12 @@ function ProfileDetails2({
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[2]
+                                            .projecthistoryDesc
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                 </div>
@@ -468,28 +546,49 @@ function ProfileDetails2({
                               <li>
                                 <div className="row">
                                   <div className="col-sm-3">
-                                    <p>Game Web Design</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[0]
+                                          .projecthistoryJob
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[0]
+                                            .projecthistoryRole
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.projecthistoryId[0]
+                                          .projecthistoryImage.formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[0]
+                                          .projecthistoryUser
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-3">
                                     <StarRatings
                                       starDimension="25px"
                                       starSpacing="5px"
-                                      rating={3}
+                                      rating={
+                                        profileData.projecthistoryId[0]
+                                          .projecthistoryRating
+                                      }
                                       starRatedColor="black"
                                       numberOfStars={5}
                                       name="rating"
@@ -497,7 +596,12 @@ function ProfileDetails2({
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[0]
+                                            .projecthistoryDesc
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                 </div>
@@ -505,28 +609,49 @@ function ProfileDetails2({
                               <li>
                                 <div className="row">
                                   <div className="col-sm-3">
-                                    <p>Game Web Design</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[1]
+                                          .projecthistoryJob
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[1]
+                                            .projecthistoryRole
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.projecthistoryId[1]
+                                          .projecthistoryImage.formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>
+                                      {
+                                        profileData.projecthistoryId[1]
+                                          .projecthistoryUser
+                                      }
+                                    </p>
                                   </div>
                                   <div className="col-sm-3">
                                     <StarRatings
                                       starDimension="25px"
                                       starSpacing="5px"
-                                      rating={5}
+                                      rating={
+                                        profileData.projecthistoryId[1]
+                                          .projecthistoryRating
+                                      }
                                       starRatedColor="black"
                                       numberOfStars={5}
                                       name="rating"
@@ -534,7 +659,12 @@ function ProfileDetails2({
                                   </div>
                                   <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Ciamik</Badge>
+                                      <Badge>
+                                        {
+                                          profileData.projecthistoryId[1]
+                                            .projecthistoryDesc
+                                        }
+                                      </Badge>
                                     </p>
                                   </div>
                                 </div>
@@ -567,25 +697,26 @@ function ProfileDetails2({
                                 <div className="row">
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.appreId[0].appreImage
+                                          .formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>{profileData.appreId[0].appreUser}</p>
                                   </div>
-                                  <div className="col-sm-1">
+                                  <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {profileData.appreId[0].appreRole}
+                                      </Badge>
                                     </p>
                                   </div>
-                                  <div className="col-sm-9">
-                                    <p>
-                                      suatu hari saya kelarin projek tiba2
-                                      ketiduran tetapi di backup oleh ces ku
-                                      #bukanmaen
-                                    </p>
+                                  <div className="col-sm-8">
+                                    <p>{profileData.appreId[0].appreDesc}</p>
                                   </div>
                                 </div>
                               </li>
@@ -593,25 +724,26 @@ function ProfileDetails2({
                                 <div className="row">
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.appreId[1].appreImage
+                                          .formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>{profileData.appreId[1].appreUser}</p>
                                   </div>
-                                  <div className="col-sm-1">
+                                  <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {profileData.appreId[1].appreRole}
+                                      </Badge>
                                     </p>
                                   </div>
-                                  <div className="col-sm-9">
-                                    <p>
-                                      suatu hari saya kelarin projek tiba2
-                                      ketiduran tetapi di backup oleh ces ku
-                                      #bukanmaen
-                                    </p>
+                                  <div className="col-sm-8">
+                                    <p>{profileData.appreId[1].appreDesc}</p>
                                   </div>
                                 </div>
                               </li>
@@ -619,25 +751,26 @@ function ProfileDetails2({
                                 <div className="row">
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.appreId[2].appreImage
+                                          .formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>{profileData.appreId[2].appreUser}</p>
                                   </div>
-                                  <div className="col-sm-1">
+                                  <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {profileData.appreId[2].appreRole}
+                                      </Badge>
                                     </p>
                                   </div>
-                                  <div className="col-sm-9">
-                                    <p>
-                                      suatu hari saya kelarin projek tiba2
-                                      ketiduran tetapi di backup oleh ces ku
-                                      #bukanmaen
-                                    </p>
+                                  <div className="col-sm-8">
+                                    <p>{profileData.appreId[2].appreDesc}</p>
                                   </div>
                                 </div>
                               </li>
@@ -645,25 +778,26 @@ function ProfileDetails2({
                                 <div className="row">
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.appreId[3].appreImage
+                                          .formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>{profileData.appreId[3].appreUser}</p>
                                   </div>
-                                  <div className="col-sm-1">
+                                  <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {profileData.appreId[3].appreRole}
+                                      </Badge>
                                     </p>
                                   </div>
-                                  <div className="col-sm-9">
-                                    <p>
-                                      suatu hari saya kelarin projek tiba2
-                                      ketiduran tetapi di backup oleh ces ku
-                                      #bukanmaen
-                                    </p>
+                                  <div className="col-sm-8">
+                                    <p>{profileData.appreId[3].appreDesc}</p>
                                   </div>
                                 </div>
                               </li>
@@ -671,25 +805,26 @@ function ProfileDetails2({
                                 <div className="row">
                                   <div className="col-sm-1">
                                     <Avatar
-                                      src="/images/our-team/team-bx/pic1.jpg"
+                                      src={
+                                        profileData.appreId[4].appreImage
+                                          .formats.small.url
+                                      }
                                       round="50px"
                                       size={35}
                                     />
                                   </div>
                                   <div className="col-sm-1">
-                                    <p>Bell</p>
+                                    <p>{profileData.appreId[4].appreUser}</p>
                                   </div>
-                                  <div className="col-sm-1">
+                                  <div className="col-sm-2">
                                     <p className="putihtextcolor">
-                                      <Badge>Available</Badge>
+                                      <Badge>
+                                        {profileData.appreId[4].appreRole}
+                                      </Badge>
                                     </p>
                                   </div>
-                                  <div className="col-sm-9">
-                                    <p>
-                                      suatu hari saya kelarin projek tiba2
-                                      ketiduran tetapi di backup oleh ces ku
-                                      #bukanmaen
-                                    </p>
+                                  <div className="col-sm-8">
+                                    <p>{profileData.appreId[4].appreDesc}</p>
                                   </div>
                                 </div>
                               </li>
