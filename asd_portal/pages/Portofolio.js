@@ -17,16 +17,16 @@ function Portofolio({ portofolios }) {
         <link rel="shortcut icon" href="kalbe.ico" />
       </Head>
       <Header />
-      <div class="page-content bg-white">
+      <div className="page-content bg-white">
         <div
-          class="dlab-bnr-inr overlay-black-middle bg-pt"
+          className="dlab-bnr-inr overlay-black-middle bg-pt"
           style={{ backgroundImage: "url(" + bg + ")" }}
         >
-          <div class="container">
-            <div class="dlab-bnr-inr-entry">
-              <h1 class="text-white">Portfolio</h1>
-              <div class="breadcrumb-row">
-                <ul class="list-inline">
+          <div className="container">
+            <div className="dlab-bnr-inr-entry">
+              <h1 className="text-white">Portfolio</h1>
+              <div className="breadcrumb-row">
+                <ul className="list-inline">
                   <li>
                     <Link href="/">Home</Link>
                   </li>

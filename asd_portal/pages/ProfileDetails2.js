@@ -18,26 +18,24 @@ function ProfileDetails2({
   appreCounts,
   testiCounts,
 }) {
-  // console.log(profileDatas);
-
   return (
     <>
       <Header></Header>
       {profileDatas &&
         profileDatas.map((profileData) => (
-          <div class="page-content bg-gray ">
-            <div class="section-full bg-gray m-b30">
-              <div class="container">
+          <div className="page-content bg-gray " key={profileData.id}>
+            <div className="section-full bg-gray m-b30">
+              <div className="container">
                 <div className="gambarlatar halamanmargin overlay-black-dark bg-img-fix "></div>
                 <div className="container bayangan halamanmargin">
                   <div className="row">
                     <div className="col-md-2 photo">
-                      <div class="dlab-box m-b30 dlab-team4">
-                        <div class="dlab-media">
+                      <div className="dlab-box m-b30 dlab-team4">
+                        <div className="dlab-media">
                           <a href="/">
                             <img
                               alt=""
-                              src={profileData.userImage.formats.small.url}
+                              src={profileData.userImage.formats.medium.url}
                             />
                           </a>
                         </div>
@@ -69,18 +67,18 @@ function ProfileDetails2({
                         color="success borderradi"
                         value={86}
                       />
-                      <div class="stats row">
-                        <div class="col-sm-4">
-                          <p class="desc-stat">Projects</p>
-                          <h5 class="number-stat">{projectCounts}</h5>
+                      <div className="stats row">
+                        <div className="col-sm-4">
+                          <p className="desc-stat">Projects</p>
+                          <h5 className="number-stat">{projectCounts}</h5>
                         </div>
-                        <div class="col-sm-4">
-                          <p class="desc-stat">Appreciation</p>
-                          <h5 class="number-stat">{appreCounts}</h5>
+                        <div className="col-sm-4">
+                          <p className="desc-stat">Appreciation</p>
+                          <h5 className="number-stat">{appreCounts}</h5>
                         </div>
-                        <div class="col-sm-4">
-                          <p class="desc-stat">Testimonials</p>
-                          <h5 class="number-stat">{testiCounts}</h5>
+                        <div className="col-sm-4">
+                          <p className="desc-stat">Testimonials</p>
+                          <h5 className="number-stat">{testiCounts}</h5>
                         </div>
                       </div>
                     </div>
@@ -92,17 +90,17 @@ function ProfileDetails2({
                       </div>
                       <div className="row">
                         <div className="col-sm-4">
-                          <div class="dlab-box m-b30 dlab-team3">
-                            <div class="dlab-media text-center">
+                          <div className="dlab-box m-b30 dlab-team3">
+                            <div className="dlab-media text-center">
                               <Avatar
                                 src={
                                   profileData.appreId[0].appreImage.formats
-                                    .small.url
+                                    .medium.url
                                 }
                                 round="50px"
                                 size={75}
                               />
-                              <h5 class="dlab-title">
+                              <h5 className="dlab-title">
                                 {profileData.appreId[0].appreUser}
                               </h5>
                               <p>{profileData.appreId[0].appreRole}</p>
@@ -110,17 +108,17 @@ function ProfileDetails2({
                           </div>
                         </div>
                         <div className="col-sm-4">
-                          <div class="dlab-box m-b30 dlab-team3">
-                            <div class="dlab-media text-center">
+                          <div className="dlab-box m-b30 dlab-team3">
+                            <div className="dlab-media text-center">
                               <Avatar
                                 src={
                                   profileData.appreId[2].appreImage.formats
-                                    .small.url
+                                    .medium.url
                                 }
                                 round="50px"
                                 size={75}
                               />
-                              <h5 class="dlab-title">
+                              <h5 className="dlab-title">
                                 {profileData.appreId[2].appreUser}
                               </h5>
                               <p>{profileData.appreId[2].appreRole}</p>
@@ -134,10 +132,10 @@ function ProfileDetails2({
               </div>
             </div>
 
-            <div class="section-full bg-gray m-b30">
-              <div class="container">
+            <div className="section-full bg-gray m-b30">
+              <div className="container">
                 <div className="container bayangan halamanmargin">
-                  <div class="icon-bx-wraper">
+                  <div className="icon-bx-wraper">
                     <div className="icon-content">
                       <div className="row m-b30">
                         <div className="col-lg-2">
@@ -171,10 +169,10 @@ function ProfileDetails2({
               </div>
             </div>
 
-            <div class="section-full bg-gray m-b30">
-              <div class="container">
+            <div className="section-full bg-gray m-b30">
+              <div className="container">
                 <div className="container bayangan halamanmargin">
-                  <div class="icon-bx-wraper">
+                  <div className="icon-bx-wraper">
                     <div className="icon-content">
                       <div className="row m-b30">
                         <div className="col">
@@ -184,7 +182,7 @@ function ProfileDetails2({
                       <div className="row">
                         <div className="col-lg-2">
                           <li>{profileData.expId[0].expStart}</li>
-                          <div class="garisvl"></div>
+                          <div className="garisvl"></div>
                           <li>{profileData.expId[0].expEnd}</li>
                         </div>
                         <div className="col-lg-10">
@@ -200,12 +198,12 @@ function ProfileDetails2({
               </div>
             </div>
 
-            <div class="section-full bg-gray m-b30">
-              <div class="container">
+            <div className="section-full bg-gray m-b30">
+              <div className="container">
                 <div className="row">
                   <div className="col">
                     <div className="container bayangan halamanmargin">
-                      <div class="icon-bx-wraper">
+                      <div className="icon-bx-wraper">
                         <div className="icon-content">
                           <div className="row ">
                             <div className="col ">
@@ -214,9 +212,9 @@ function ProfileDetails2({
                           </div>
                           <div className="row">
                             <div className="col-lg-4">
-                              <div class="text-center">
-                                <div class="icon-bx-sm radius m-b20">
-                                  <a href="/" class="icon-cell">
+                              <div className="text-center">
+                                <div className="icon-bx-sm radius m-b20">
+                                  <a href="/" className="icon-cell">
                                     <Avatar
                                       src={
                                         profileData.skillId[3].skillImage.url
@@ -226,15 +224,15 @@ function ProfileDetails2({
                                     />
                                   </a>
                                 </div>
-                                <div class="icon-content">
+                                <div className="icon-content">
                                   <p>{profileData.skillId[3].skillName}</p>
                                 </div>
                               </div>
                             </div>
                             <div className="col-lg-4">
-                              <div class="text-center">
-                                <div class="icon-bx-sm radius m-b20">
-                                  <a href="/" class="icon-cell">
+                              <div className="text-center">
+                                <div className="icon-bx-sm radius m-b20">
+                                  <a href="/" className="icon-cell">
                                     <Avatar
                                       src={
                                         profileData.skillId[1].skillImage.url
@@ -244,15 +242,15 @@ function ProfileDetails2({
                                     />
                                   </a>
                                 </div>
-                                <div class="icon-content">
+                                <div className="icon-content">
                                   <p>{profileData.skillId[1].skillName}</p>
                                 </div>
                               </div>
                             </div>
                             <div className="col-lg-4">
-                              <div class="text-center">
-                                <div class="icon-bx-sm radius m-b20">
-                                  <a href="/" class="icon-cell">
+                              <div className="text-center">
+                                <div className="icon-bx-sm radius m-b20">
+                                  <a href="/" className="icon-cell">
                                     <Avatar
                                       src={
                                         profileData.skillId[2].skillImage.url
@@ -262,7 +260,7 @@ function ProfileDetails2({
                                     />
                                   </a>
                                 </div>
-                                <div class="icon-content">
+                                <div className="icon-content">
                                   <p>{profileData.skillId[2].skillName}</p>
                                 </div>
                               </div>
@@ -275,7 +273,7 @@ function ProfileDetails2({
 
                   <div className="col">
                     <div className="container bayangan halamanmargin">
-                      <div class="icon-bx-wraper">
+                      <div className="icon-bx-wraper">
                         <div className="icon-content">
                           <div className="row">
                             <div className="col">
@@ -284,9 +282,9 @@ function ProfileDetails2({
                           </div>
                           <div className="row">
                             <div className="col-lg-4">
-                              <div class="text-center">
-                                <div class="icon-bx-sm radius m-b20">
-                                  <a href="/" class="icon-cell">
+                              <div className="text-center">
+                                <div className="icon-bx-sm radius m-b20">
+                                  <a href="/" className="icon-cell">
                                     <Avatar
                                       src={profileData.toolId[0].toolImage.url}
                                       round="50px"
@@ -294,15 +292,15 @@ function ProfileDetails2({
                                     />
                                   </a>
                                 </div>
-                                <div class="icon-content">
+                                <div className="icon-content">
                                   <p>{profileData.toolId[0].toolName}</p>
                                 </div>
                               </div>
                             </div>
                             <div className="col-lg-4">
-                              <div class="text-center">
-                                <div class="icon-bx-sm radius m-b20">
-                                  <a href="/" class="icon-cell">
+                              <div className="text-center">
+                                <div className="icon-bx-sm radius m-b20">
+                                  <a href="/" className="icon-cell">
                                     <Avatar
                                       src={profileData.toolId[1].toolImage.url}
                                       round="50px"
@@ -310,15 +308,15 @@ function ProfileDetails2({
                                     />
                                   </a>
                                 </div>
-                                <div class="icon-content">
+                                <div className="icon-content">
                                   <p>{profileData.toolId[1].toolName}</p>
                                 </div>
                               </div>
                             </div>
                             <div className="col-lg-4">
-                              <div class="text-center">
-                                <div class="icon-bx-sm radius m-b20">
-                                  <a href="/" class="icon-cell">
+                              <div className="text-center">
+                                <div className="icon-bx-sm radius m-b20">
+                                  <a href="/" className="icon-cell">
                                     <Avatar
                                       src={profileData.toolId[2].toolImage.url}
                                       round="50px"
@@ -326,7 +324,7 @@ function ProfileDetails2({
                                     />
                                   </a>
                                 </div>
-                                <div class="icon-content">
+                                <div className="icon-content">
                                   <p>{profileData.toolId[2].toolName}</p>
                                 </div>
                               </div>
@@ -340,11 +338,11 @@ function ProfileDetails2({
               </div>
             </div>
 
-            <div class="section-full bg-gray m-b30">
-              <div class="container">
+            <div className="section-full bg-gray m-b30">
+              <div className="container">
                 <div className="container bayangan halamanmargin">
                   <div>
-                    <div class="icon-bx-wraper">
+                    <div className="icon-bx-wraper">
                       <div className="icon-content">
                         <div className="row m-b30">
                           <div className="col">
@@ -353,7 +351,7 @@ function ProfileDetails2({
                         </div>
                         <div className="row">
                           <div className="col-md-11 m-l30">
-                            <ul class="list-num-count red list-box">
+                            <ul className="list-num-count red list-box">
                               <li>
                                 <div className="row">
                                   <div className="col-sm-3">
@@ -378,7 +376,8 @@ function ProfileDetails2({
                                     <Avatar
                                       src={
                                         profileData.projecthistoryId[0]
-                                          .projecthistoryImage.formats.small.url
+                                          .projecthistoryImage.formats.medium
+                                          .url
                                       }
                                       round="50px"
                                       size={35}
@@ -441,7 +440,8 @@ function ProfileDetails2({
                                     <Avatar
                                       src={
                                         profileData.projecthistoryId[1]
-                                          .projecthistoryImage.formats.small.url
+                                          .projecthistoryImage.formats.medium
+                                          .url
                                       }
                                       round="50px"
                                       size={35}
@@ -504,7 +504,8 @@ function ProfileDetails2({
                                     <Avatar
                                       src={
                                         profileData.projecthistoryId[2]
-                                          .projecthistoryImage.formats.small.url
+                                          .projecthistoryImage.formats.medium
+                                          .url
                                       }
                                       round="50px"
                                       size={35}
@@ -567,7 +568,8 @@ function ProfileDetails2({
                                     <Avatar
                                       src={
                                         profileData.projecthistoryId[0]
-                                          .projecthistoryImage.formats.small.url
+                                          .projecthistoryImage.formats.medium
+                                          .url
                                       }
                                       round="50px"
                                       size={35}
@@ -630,7 +632,8 @@ function ProfileDetails2({
                                     <Avatar
                                       src={
                                         profileData.projecthistoryId[1]
-                                          .projecthistoryImage.formats.small.url
+                                          .projecthistoryImage.formats.medium
+                                          .url
                                       }
                                       round="50px"
                                       size={35}
@@ -679,11 +682,11 @@ function ProfileDetails2({
               </div>
             </div>
 
-            <div class="section-full bg-gray m-b30">
-              <div class="container">
+            <div className="section-full bg-gray m-b30">
+              <div className="container">
                 <div className="container bayangan halamanmargin">
                   <div>
-                    <div class="icon-bx-wraper">
+                    <div className="icon-bx-wraper">
                       <div className="icon-content">
                         <div className="row m-b30">
                           <div className="col">
@@ -692,14 +695,14 @@ function ProfileDetails2({
                         </div>
                         <div className="row">
                           <div className="col-md-11 m-l30">
-                            <ul class="list-num-count red list-box">
+                            <ul className="list-num-count red list-box">
                               <li>
                                 <div className="row">
                                   <div className="col-sm-1">
                                     <Avatar
                                       src={
                                         profileData.appreId[0].appreImage
-                                          .formats.small.url
+                                          .formats.medium.url
                                       }
                                       round="50px"
                                       size={35}
@@ -726,7 +729,7 @@ function ProfileDetails2({
                                     <Avatar
                                       src={
                                         profileData.appreId[1].appreImage
-                                          .formats.small.url
+                                          .formats.medium.url
                                       }
                                       round="50px"
                                       size={35}
@@ -753,7 +756,7 @@ function ProfileDetails2({
                                     <Avatar
                                       src={
                                         profileData.appreId[2].appreImage
-                                          .formats.small.url
+                                          .formats.medium.url
                                       }
                                       round="50px"
                                       size={35}
@@ -780,7 +783,7 @@ function ProfileDetails2({
                                     <Avatar
                                       src={
                                         profileData.appreId[3].appreImage
-                                          .formats.small.url
+                                          .formats.medium.url
                                       }
                                       round="50px"
                                       size={35}
@@ -807,7 +810,7 @@ function ProfileDetails2({
                                     <Avatar
                                       src={
                                         profileData.appreId[4].appreImage
-                                          .formats.small.url
+                                          .formats.medium.url
                                       }
                                       round="50px"
                                       size={35}
@@ -838,17 +841,17 @@ function ProfileDetails2({
               </div>
             </div>
 
-            <div class="section-full bg-gray m-b30">
-              <div class="container">
+            <div className="section-full bg-gray m-b30">
+              <div className="container">
                 <div className="container bayangan halamanmargin">
-                  <div class="section-content">
+                  <div className="section-content">
                     <Testmonial10
                       testimonialData={TestimonialDatas}
                     ></Testmonial10>
-                    <div class="row m-t10 m-l5">
-                      <div class="col-lg-12 text-center ">
+                    <div className="row m-t10 m-l5">
+                      <div className="col-lg-12 text-center ">
                         <button
-                          class="site-button yellow m-r15 radius-xl box-shadow "
+                          className="site-button yellow m-r15 radius-xl box-shadow "
                           type="button"
                         >
                           View All

@@ -36,11 +36,11 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="hero-content">
-                  <h1 className="title">Lorem Ipsum Dolor Sit Amet</h1>
+                  <h1 className="title">ASD Portal Product Digitalization</h1>
                   <div className="description">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the.
+                    ASD Portal is a platform that helps people to reach their
+                    business digitalization. Over million tickets completely
+                    fixed/done by ASD Portal.
                   </div>
                   <div className="buttons">
                     <a href="">Read More</a>
@@ -63,9 +63,8 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
           <div className="section-head text-center">
             <h2 className="title text-primary"> Our Services</h2>
             <p>
-              There are many variations of passages of Lorem Ipsum typesetting
-              industry has been the industry's standard dummy text ever since
-              the been when an unknown printer.
+              There are many variations of services that could help you choose
+              what kind of service that you might need.
             </p>
           </div>
           <div className="section-content row">
@@ -176,7 +175,7 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
                     <p className="m-b30">
                       A helping platform to product digitalizing for user who
                       needed some dynamic modern feature on their services.
-                      ORDER AND GO!
+                      SIMPLY ORDER AND GO!
                     </p>
                   </div>
                 </div>
@@ -229,7 +228,7 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
 
                 <div className="section-content box-sort-in m-b10 p-b0 button-example m-b12">
                   {ourTeams &&
-                    ourTeams.slice(0,8).map((ourTeam, ourTeamKey) => (
+                    ourTeams.slice(0, 8).map((ourTeam, ourTeamKey) => (
                       <ul className="list-cup red list-box">
                         <li> {ourTeam.userId.userName} </li>
                       </ul>

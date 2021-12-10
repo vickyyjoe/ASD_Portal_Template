@@ -64,9 +64,9 @@ function PartnersCarousel({ partners }) {
     <>
       <Slider {...settings} className="client-logo-carousel btn-style-1 icon-2">
         {partners.map((partner) => (
-          <div class="item">
-            <div class={`ow-client-logo ${padding}`}>
-              <div class={`client-logo ${Border}`}>
+          <div className="item" key={partner.id}>
+            <div className={`ow-client-logo ${padding}`}>
+              <div className={`client-logo ${Border}`}>
                 <img src={partner.partnerImage.formats.thumbnail.url} alt="" />
               </div>
             </div>

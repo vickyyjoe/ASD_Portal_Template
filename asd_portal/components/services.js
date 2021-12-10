@@ -19,8 +19,8 @@ const bg3 = "/images/background/map-bg.png";
 const bg4 = "/1.jpg";
 var bg1 = "/images/background/bg1.jpg";
 
-function services({ ourServices , toolDatas}) {
-    console.log(toolDatas)
+function services({ ourServices, toolDatas }) {
+  console.log(toolDatas);
   return (
     <div className="skin-1">
       <Header></Header>
@@ -51,11 +51,8 @@ function services({ ourServices , toolDatas}) {
                 <div class="section-head text-black">
                   <h2 class="title">Our Services</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    There are many variations of services that could help you
+                    choose what kind of service that you might need.
                   </p>
                 </div>
                 <div class="section-content row">
@@ -84,9 +81,8 @@ function services({ ourServices , toolDatas}) {
                       Let's Convert Your Idea into Reality
                     </h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the
+                      Let's Convert Your Idea into Reality by clicking this
+                      button down below!!!
                     </p>
                     <button name="submit" class="site-button button-lg">
                       {" "}

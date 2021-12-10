@@ -18,16 +18,16 @@ function AboutUs({ partners, ourteams }) {
         <link rel="shortcut icon" href="kalbe.ico" />
       </Head>
       <Header></Header>
-      <div class="page-content bg-white">
+      <div className="page-content bg-white">
         <div
-          class="dlab-bnr-inr overlay-black-middle text-center bg-pt"
+          className="dlab-bnr-inr overlay-black-middle text-center bg-pt"
           style={{ backgroundImage: "url(" + bnr3 + ")" }}
         >
-          <div class="container">
-            <div class="dlab-bnr-inr-entry align-m text-center">
-              <h1 class="text-white">About us</h1>
-              <div class="breadcrumb-row">
-                <ul class="list-inline">
+          <div className="container">
+            <div className="dlab-bnr-inr-entry align-m text-center">
+              <h1 className="text-white">About us</h1>
+              <div className="breadcrumb-row">
+                <ul className="list-inline">
                   <li>
                     <a href="/">Home</a>
                   </li>
@@ -38,16 +38,16 @@ function AboutUs({ partners, ourteams }) {
           </div>
         </div>
 
-        <div class="content-block">
+        <div className="content-block">
           <div
-            class="section-full content-inner bg-white video-section"
+            className="section-full content-inner bg-white video-section"
             style={{ backgroundImage: "url(" + bg1 + ")" }}
           >
-            <div class="container">
-              <div class="section-content">
-                <div class="row d-flex">
-                  <div class="col-lg-6 col-md-12 m-b30">
-                    <div class="video-bx">
+            <div className="container">
+              <div className="section-content">
+                <div className="row d-flex">
+                  <div className="col-lg-6 col-md-12 m-b30">
+                    <div className="video-bx">
                       <img
                         src={
                           "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/carousel_2_a5280729d3.jpg"
@@ -56,17 +56,19 @@ function AboutUs({ partners, ourteams }) {
                       />
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
-                    <div class="content-bx1">
-                      <h2 class="m-b15 title">
+                  <div className="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
+                    <div className="content-bx1">
+                      <h2 className="m-b15 title">
                         ASD PORTAL
                         <br />
-                        <span class="text-primary">service, maintenance</span>
+                        <span className="text-primary">
+                          service, maintenance
+                        </span>
                       </h2>
-                      <p class="m-b30">
+                      <p className="m-b30">
                         A helping platform to product digitalizing for user who
                         needed some dynamic modern feature on their services.
-                        ORDER AND GO!
+                        SIMPLY ORDER AND GO!
                       </p>
                     </div>
                   </div>
@@ -75,32 +77,35 @@ function AboutUs({ partners, ourteams }) {
             </div>
           </div>
 
-          <div class="section-full bg-gray content-inner-2">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="sort-title clearfix text-center">
-                    <h2 class="title">Partners</h2>
+          <div className="section-full bg-gray content-inner-2">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="sort-title clearfix text-center">
+                    <h2 className="title">Partners</h2>
                   </div>
                 </div>
               </div>
-              <div class="section-content">
+              <div className="section-content">
                 <PartnersCarousel partners={partners} />
               </div>
             </div>
           </div>
 
-          <div class="section-full content-inner">
-            <div class="container">
-              <div class="section-head text-black text-center">
-                <h2 class="title">Our Team</h2>
+          <div className="section-full content-inner">
+            <div className="container">
+              <div className="section-head text-black text-center">
+                <h2 className="title">Our Team</h2>
               </div>
-              <div class="row">
+              <div className="row">
                 {ourteams &&
-                  ourteams.slice(0, 8).map((ourteam, ourteamKey) => (
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                      <div class="dlab-box m-b30 dlab-team1">
-                        <div class="dlab-media">
+                  ourteams.slice(0, 8).map((ourteam) => (
+                    <div
+                      className="col-lg-3 col-md-6 col-sm-6"
+                      key={ourteam.id}
+                    >
+                      <div className="dlab-box m-b30 dlab-team1">
+                        <div className="dlab-media">
                           <img
                             width="358"
                             height="460"
@@ -108,9 +113,11 @@ function AboutUs({ partners, ourteams }) {
                             src={ourteam.userId.userImage.formats.medium.url}
                           />
                         </div>
-                        <div class="dlab-info">
-                          <h4 class="dlab-title">{ourteam.userId.userName}</h4>
-                          <span class="dlab-position">
+                        <div className="dlab-info">
+                          <h4 className="dlab-title">
+                            {ourteam.userId.userName}
+                          </h4>
+                          <span className="dlab-position">
                             {ourteam.userId.userPosition}
                           </span>
                         </div>
