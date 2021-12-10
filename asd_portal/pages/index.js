@@ -8,18 +8,20 @@ import Counter from "../components/element/Counter";
 import Testimonial from "../components/element/Testimonial";
 import Footer from "../components/Footer";
 import axios from "axios";
+import OurTeam from "./OurTeam";
 
 const bg = "/images/background/bg2.jpg";
 
 const bg3 = "/images/background/map-bg.png";
-const bg4 = "/1.jpg";
+const bg4 =
+  "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
 var bg1 = "/images/background/bg1.jpg";
 var bg2 = "/images/background/bg-video.png";
 
 const url = "https://asd-portal-be.herokuapp.com";
 const urlCloud = "https://res.cloudinary.com/asd-portal-media/image/upload";
 
-function App({ ourServices, TestimonialDatas }) {
+function App({ ourServices, TestimonialDatas, ourTeams }) {
   console.log(TestimonialDatas);
   return (
     <div className="skin-1">
@@ -28,7 +30,7 @@ function App({ ourServices, TestimonialDatas }) {
         <link rel="shortcut icon" href="kalbe.ico" />
       </Head>
       <Header></Header>
-      <Parallax bgImage={bg4} strength={200}>
+      <Parallax bgImage={bg4} strength={300}>
         <div className="hero-section pt-50 home-bnr1">
           <div className="container">
             <div className="row align-items-center">
@@ -44,10 +46,12 @@ function App({ ourServices, TestimonialDatas }) {
                     <a href="">Read More</a>
                     <a href="">About Us</a>
                   </div>
+                  <br></br>
                 </div>
               </div>
+
               <div className="col-lg-6 col-md-12">
-                <img src={"/images/main-slider/slide7.png"} alt="" />
+                <img src={""} alt="" />
               </div>
             </div>
           </div>
@@ -191,72 +195,29 @@ function App({ ourServices, TestimonialDatas }) {
             <div className="row">
               <div className="col-lg-6 m-b30">
                 <div className="row">
-                  <div className="col-lg-6 col-md-6 col-sm-6">
-                    <div className="dlab-box m-b30 dlab-team1">
-                      <div className="dlab-media">
-                        <img
-                          width="358"
-                          height="460"
-                          alt=""
-                          src={"/images/our-team/pic1.jpg"}
-                        />
+                  {ourTeams &&
+                    ourTeams.slice(0, 4).map((ourTeam, ourTeamKey) => (
+                      <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="dlab-box m-b30 dlab-team1">
+                          <div className="dlab-media">
+                            <img
+                              width="358"
+                              height="460"
+                              alt=""
+                              src={ourTeam.userId.userImage.formats.medium.url}
+                            />
+                          </div>
+                          <div className="dlab-info">
+                            <h4 className="dlab-title">
+                              {ourTeam.userId.userName}
+                            </h4>
+                            <span className="dlab-position">
+                              {ourTeam.userId.userPosition}
+                            </span>
+                          </div>
+                        </div>
                       </div>
-                      <div className="dlab-info">
-                        <h4 className="dlab-title">Nashid Martines</h4>
-                        <span className="dlab-position">Director</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6">
-                    <div className="dlab-box m-b30 dlab-team1">
-                      <div className="dlab-media">
-                        <img
-                          width="358"
-                          height="460"
-                          alt=""
-                          src={"/images/our-team/pic1.jpg"}
-                        />
-                      </div>
-                      <div className="dlab-info">
-                        <h4 className="dlab-title">Nashid Martines</h4>
-                        <span className="dlab-position">Director</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-lg-6 col-md-6 col-sm-6">
-                    <div className="dlab-box m-b30 dlab-team1">
-                      <div className="dlab-media">
-                        <img
-                          width="358"
-                          height="460"
-                          alt=""
-                          src={"/images/our-team/pic1.jpg"}
-                        />
-                      </div>
-                      <div className="dlab-info">
-                        <h4 className="dlab-title">Nashid Martines</h4>
-                        <span className="dlab-position">Director</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6">
-                    <div className="dlab-box m-b30 dlab-team1">
-                      <div className="dlab-media">
-                        <img
-                          width="358"
-                          height="460"
-                          alt=""
-                          src={"/images/our-team/pic1.jpg"}
-                        />
-                      </div>
-                      <div className="dlab-info">
-                        <h4 className="dlab-title">Nashid Martines</h4>
-                        <span className="dlab-position">Director</span>
-                      </div>
-                    </div>
-                  </div>
+                    ))}
                 </div>
               </div>
               <div className="col-lg-6">
@@ -267,18 +228,12 @@ function App({ ourServices, TestimonialDatas }) {
                 </div>
 
                 <div className="section-content box-sort-in m-b10 p-b0 button-example m-b12">
-                  <ul className="list-cup red list-box">
-                    <li>Aorem ipsum dolor sit amet</li>
-                    <li>Aorem ipsum dolor sit amet</li>
-                    <li>Borem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Aorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Aorem ipsum dolor sit amet</li>
-                    <li>Borem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Aorem ipsum dolor sit amet</li>
-                  </ul>
+                  {ourTeams &&
+                    ourTeams.slice(0,8).map((ourTeam, ourTeamKey) => (
+                      <ul className="list-cup red list-box">
+                        <li> {ourTeam.userId.userName} </li>
+                      </ul>
+                    ))}
                 </div>
               </div>
             </div>
@@ -319,5 +274,10 @@ export async function getServerSideProps() {
   );
   const TestimonialDatas = TestimonialData.data;
 
-  return { props: { ourServices, TestimonialDatas } };
+  const ourTeamRes = await axios(
+    "https://asd-portal-be.herokuapp.com/our-teams?_sort=id"
+  );
+  const ourTeams = ourTeamRes.data;
+
+  return { props: { ourServices, TestimonialDatas, ourTeams } };
 }
