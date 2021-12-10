@@ -118,7 +118,7 @@ import axios from "axios";
 //   return list;
 // };
 
-const PortfolioCard = ({ portfolioCard }) => {
+const PortfolioCard = ({ portfolios }) => {
   // const [state, setState] = useState({
   //   list: portofolio,
   //   filterKey: "all",
@@ -128,8 +128,8 @@ const PortfolioCard = ({ portfolioCard }) => {
 
   // const filteredList = filterImages(filterKey, list);
   // const filters = getFilterSections(portofolio);
-  const collumnCls = portfolioCard.col ? portfolioCard.col : "col-md-3";
-
+  // const collumnCls = portfolioCard.col ? portfolioCard.col : "col-md-3";
+  console.log(portfolios);
   const [filteredData, setfilteredData] = useState();
 
   const filterHandle = () => {};
@@ -159,45 +159,46 @@ const PortfolioCard = ({ portfolioCard }) => {
           {/* FILTERED PORTFOLIO LIST */}
           <div className="portfolio_area">
             <div className="row portfolio-grid">
-              {portfolioCard.map((portfolioCard) => (
-                <div className={collumnCls}>
-                  <div class="dlab-box dlab-gallery-box">
-                    <div class="dlab-media dlab-img-overlay1 dlab-img-effect">
-                      <Link href="/">
-                        <a>
-                          <img
-                            src={portfolioCard.portfolioImage.formats.small.url}
-                            alt=""
-                          />
-                        </a>
-                      </Link>
-                      <div class="overlay-bx">
-                        <div class="overlay-icon">
-                          <div class="text-white">
-                            <Link href="/">
-                              <a class="falinkwarna">
-                                <i class="fa fa-link icon-bx-xs"></i>
-                              </a>
-                            </Link>
+              {portfolios &&
+                portfolios.map((portfolio) => (
+                  <div className="col-md-3">
+                    <div class="dlab-box dlab-gallery-box">
+                      <div class="dlab-media dlab-img-overlay1 dlab-img-effect">
+                        <Link href="/">
+                          <a>
+                            <img
+                              src={portfolio.portfolioImage.formats.small.url}
+                              alt=""
+                            />
+                          </a>
+                        </Link>
+                        <div class="overlay-bx">
+                          <div class="overlay-icon">
+                            <div class="text-white">
+                              <Link href="/">
+                                <a class="falinkwarna">
+                                  <i class="fa fa-link icon-bx-xs"></i>
+                                </a>
+                              </Link>
 
-                            <span class="check-km" title="Factory Managment">
-                              <i class="fa fa-picture-o icon-bx-xs"></i>
-                            </span>
+                              <span class="check-km" title="Factory Managment">
+                                <i class="fa fa-picture-o icon-bx-xs"></i>
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="dez-info p-a30 bg-white">
-                      <p class="dez-title m-t0">
-                        <Link href="/">{portfolioCard.portfolioName}</Link>
-                      </p>
-                      <p>
-                        <small>{portfolioCard.portfolioCategory}</small>
-                      </p>
+                      <div class="dez-info p-a30 bg-white">
+                        <p class="dez-title m-t0">
+                          <Link href="/">{portfolio.portfolioName}</Link>
+                        </p>
+                        <p>
+                          <small>{portfolio.portfolioCategory}</small>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </div>
