@@ -88,43 +88,27 @@ function ProfileDetails2({
                           <h5>Recommendation Letter</h5>
                         </div>
                       </div>
+
                       <div className="row">
-                        <div className="col-sm-4">
-                          <div className="dlab-box m-b30 dlab-team3">
-                            <div className="dlab-media text-center">
-                              <Avatar
-                                src={
-                                  profileData.appreId[0].appreImage.formats
-                                    .medium.url
-                                }
-                                round="50px"
-                                size={75}
-                              />
-                              <h5 className="dlab-title">
-                                {profileData.appreId[0].appreUser}
-                              </h5>
-                              <p>{profileData.appreId[0].appreRole}</p>
+                        {profileData.appreId.slice(2, 4).map((appreData) => (
+                          <div className="col-sm-4">
+                            <div className="dlab-box m-b30 dlab-team3">
+                              <div className="dlab-media text-center">
+                                <Avatar
+                                  src={
+                                    appreData.appreImage.formats.thumbnail.url
+                                  }
+                                  round="50px"
+                                  size={75}
+                                />
+                                <h5 className="dlab-title">
+                                  {appreData.appreUser}
+                                </h5>
+                                <p>{appreData.appreRole}</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="col-sm-4">
-                          <div className="dlab-box m-b30 dlab-team3">
-                            <div className="dlab-media text-center">
-                              <Avatar
-                                src={
-                                  profileData.appreId[2].appreImage.formats
-                                    .medium.url
-                                }
-                                round="50px"
-                                size={75}
-                              />
-                              <h5 className="dlab-title">
-                                {profileData.appreId[2].appreUser}
-                              </h5>
-                              <p>{profileData.appreId[2].appreRole}</p>
-                            </div>
-                          </div>
-                        </div>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -178,20 +162,20 @@ function ProfileDetails2({
                         <div className="col">
                           <h4 className="dlab-tilte">Experience</h4>
                         </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-lg-2">
-                          <li>{profileData.expId[0].expStart}</li>
-                          <div className="garisvl"></div>
-                          <li>{profileData.expId[0].expEnd}</li>
+                      </div>{" "}
+                      {profileData.expId.slice(0, 1).map((expData) => (
+                        <div className="row m-b10">
+                          <div className="col-lg-2">
+                            <li>{expData.expStart}</li>
+                            <div className="garisvl"></div>
+                            <li>{expData.expEnd}</li>
+                          </div>
+                          <div className="col-lg-10">
+                            <h5 className="dlab-tilte">{expData.expRole}</h5>
+                            <p>{expData.expDesc}</p>
+                          </div>
                         </div>
-                        <div className="col-lg-10">
-                          <h5 className="dlab-tilte">
-                            {profileData.expId[0].expRole}
-                          </h5>
-                          <p>{profileData.expId[0].expDesc}</p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -211,60 +195,26 @@ function ProfileDetails2({
                             </div>
                           </div>
                           <div className="row">
-                            <div className="col-lg-4">
-                              <div className="text-center">
-                                <div className="icon-bx-sm radius m-b20">
-                                  <a href="/" className="icon-cell">
-                                    <Avatar
-                                      src={
-                                        profileData.skillId[3].skillImage.url
-                                      }
-                                      round="50px"
-                                      size={75}
-                                    />
-                                  </a>
+                            {profileData.skillId
+                              .slice(1, 4)
+                              .map((skillData) => (
+                                <div className="col-lg-4">
+                                  <div className="text-center">
+                                    <div className="icon-bx-sm radius m-b20">
+                                      <a href="/" className="icon-cell">
+                                        <Avatar
+                                          src={skillData.skillImage.url}
+                                          round="50px"
+                                          size={75}
+                                        />
+                                      </a>
+                                    </div>
+                                    <div className="icon-content">
+                                      <p>{skillData.skillName}</p>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div className="icon-content">
-                                  <p>{profileData.skillId[3].skillName}</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-4">
-                              <div className="text-center">
-                                <div className="icon-bx-sm radius m-b20">
-                                  <a href="/" className="icon-cell">
-                                    <Avatar
-                                      src={
-                                        profileData.skillId[1].skillImage.url
-                                      }
-                                      round="50px"
-                                      size={75}
-                                    />
-                                  </a>
-                                </div>
-                                <div className="icon-content">
-                                  <p>{profileData.skillId[1].skillName}</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-4">
-                              <div className="text-center">
-                                <div className="icon-bx-sm radius m-b20">
-                                  <a href="/" className="icon-cell">
-                                    <Avatar
-                                      src={
-                                        profileData.skillId[2].skillImage.url
-                                      }
-                                      round="50px"
-                                      size={75}
-                                    />
-                                  </a>
-                                </div>
-                                <div className="icon-content">
-                                  <p>{profileData.skillId[2].skillName}</p>
-                                </div>
-                              </div>
-                            </div>
+                              ))}
                           </div>
                         </div>
                       </div>
@@ -281,54 +231,24 @@ function ProfileDetails2({
                             </div>
                           </div>
                           <div className="row">
-                            <div className="col-lg-4">
-                              <div className="text-center">
-                                <div className="icon-bx-sm radius m-b20">
-                                  <a href="/" className="icon-cell">
-                                    <Avatar
-                                      src={profileData.toolId[0].toolImage.url}
-                                      round="50px"
-                                      size={75}
-                                    />
-                                  </a>
-                                </div>
-                                <div className="icon-content">
-                                  <p>{profileData.toolId[0].toolName}</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-4">
-                              <div className="text-center">
-                                <div className="icon-bx-sm radius m-b20">
-                                  <a href="/" className="icon-cell">
-                                    <Avatar
-                                      src={profileData.toolId[1].toolImage.url}
-                                      round="50px"
-                                      size={75}
-                                    />
-                                  </a>
-                                </div>
-                                <div className="icon-content">
-                                  <p>{profileData.toolId[1].toolName}</p>
+                            {profileData.toolId.slice(0, 3).map((toolData) => (
+                              <div className="col-lg-4">
+                                <div className="text-center">
+                                  <div className="icon-bx-sm radius m-b20">
+                                    <a href="/" className="icon-cell">
+                                      <Avatar
+                                        src={toolData.toolImage.url}
+                                        round="50px"
+                                        size={75}
+                                      />
+                                    </a>
+                                  </div>
+                                  <div className="icon-content">
+                                    <p>{toolData.toolName}</p>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div className="col-lg-4">
-                              <div className="text-center">
-                                <div className="icon-bx-sm radius m-b20">
-                                  <a href="/" className="icon-cell">
-                                    <Avatar
-                                      src={profileData.toolId[2].toolImage.url}
-                                      round="50px"
-                                      size={75}
-                                    />
-                                  </a>
-                                </div>
-                                <div className="icon-content">
-                                  <p>{profileData.toolId[2].toolName}</p>
-                                </div>
-                              </div>
-                            </div>
+                            ))}
                           </div>
                         </div>
                       </div>
@@ -352,326 +272,54 @@ function ProfileDetails2({
                         <div className="row">
                           <div className="col-md-11 m-l30">
                             <ul className="list-num-count red list-box">
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-3">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[0]
-                                          .projecthistoryJob
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[0]
-                                            .projecthistoryRole
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.projecthistoryId[0]
-                                          .projecthistoryImage.formats.medium
-                                          .url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[0]
-                                          .projecthistoryUser
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-3">
-                                    <StarRatings
-                                      starDimension="25px"
-                                      starSpacing="5px"
-                                      rating={
-                                        profileData.projecthistoryId[0]
-                                          .projecthistoryRating
-                                      }
-                                      starRatedColor="black"
-                                      numberOfStars={5}
-                                      name="rating"
-                                    />
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[0]
-                                            .projecthistoryDesc
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-3">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[1]
-                                          .projecthistoryJob
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[1]
-                                            .projecthistoryRole
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.projecthistoryId[1]
-                                          .projecthistoryImage.formats.medium
-                                          .url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[1]
-                                          .projecthistoryUser
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-3">
-                                    <StarRatings
-                                      starDimension="25px"
-                                      starSpacing="5px"
-                                      rating={
-                                        profileData.projecthistoryId[1]
-                                          .projecthistoryRating
-                                      }
-                                      starRatedColor="black"
-                                      numberOfStars={5}
-                                      name="rating"
-                                    />
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[1]
-                                            .projecthistoryDesc
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-3">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[2]
-                                          .projecthistoryJob
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[2]
-                                            .projecthistoryRole
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.projecthistoryId[2]
-                                          .projecthistoryImage.formats.medium
-                                          .url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[2]
-                                          .projecthistoryUser
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-3">
-                                    <StarRatings
-                                      starDimension="25px"
-                                      starSpacing="5px"
-                                      rating={
-                                        profileData.projecthistoryId[2]
-                                          .projecthistoryRating
-                                      }
-                                      starRatedColor="black"
-                                      numberOfStars={5}
-                                      name="rating"
-                                    />
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[2]
-                                            .projecthistoryDesc
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-3">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[0]
-                                          .projecthistoryJob
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[0]
-                                            .projecthistoryRole
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.projecthistoryId[0]
-                                          .projecthistoryImage.formats.medium
-                                          .url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[0]
-                                          .projecthistoryUser
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-3">
-                                    <StarRatings
-                                      starDimension="25px"
-                                      starSpacing="5px"
-                                      rating={
-                                        profileData.projecthistoryId[0]
-                                          .projecthistoryRating
-                                      }
-                                      starRatedColor="black"
-                                      numberOfStars={5}
-                                      name="rating"
-                                    />
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[0]
-                                            .projecthistoryDesc
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-3">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[1]
-                                          .projecthistoryJob
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[1]
-                                            .projecthistoryRole
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.projecthistoryId[1]
-                                          .projecthistoryImage.formats.medium
-                                          .url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>
-                                      {
-                                        profileData.projecthistoryId[1]
-                                          .projecthistoryUser
-                                      }
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-3">
-                                    <StarRatings
-                                      starDimension="25px"
-                                      starSpacing="5px"
-                                      rating={
-                                        profileData.projecthistoryId[1]
-                                          .projecthistoryRating
-                                      }
-                                      starRatedColor="black"
-                                      numberOfStars={5}
-                                      name="rating"
-                                    />
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {
-                                          profileData.projecthistoryId[1]
-                                            .projecthistoryDesc
-                                        }
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                </div>
-                              </li>
+                              {profileData.projecthistoryId
+                                .slice(0, 5)
+                                .map((phData) => (
+                                  <li>
+                                    <div className="row">
+                                      <div className="col-sm-3">
+                                        <p>{phData.projecthistoryJob}</p>
+                                      </div>
+                                      <div className="col-sm-2">
+                                        <p className="putihtextcolor">
+                                          <Badge>
+                                            {phData.projecthistoryRole}
+                                          </Badge>
+                                        </p>
+                                      </div>
+                                      <div className="col-sm-1">
+                                        <Avatar
+                                          src={
+                                            phData.projecthistoryImage.formats
+                                              .thumbnail.url
+                                          }
+                                          round="50px"
+                                          size={35}
+                                        />
+                                      </div>
+                                      <div className="col-sm-1">
+                                        <p>{phData.projecthistoryUser}</p>
+                                      </div>
+                                      <div className="col-sm-3">
+                                        <StarRatings
+                                          starDimension="25px"
+                                          starSpacing="5px"
+                                          rating={phData.projecthistoryRating}
+                                          starRatedColor="black"
+                                          numberOfStars={5}
+                                          name="rating"
+                                        />
+                                      </div>
+                                      <div className="col-sm-2">
+                                        <p className="putihtextcolor">
+                                          <Badge>
+                                            {phData.projecthistoryDesc}
+                                          </Badge>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                ))}
                             </ul>
                           </div>
                         </div>
@@ -696,141 +344,35 @@ function ProfileDetails2({
                         <div className="row">
                           <div className="col-md-11 m-l30">
                             <ul className="list-num-count red list-box">
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.appreId[0].appreImage
-                                          .formats.medium.url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>{profileData.appreId[0].appreUser}</p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {profileData.appreId[0].appreRole}
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-8">
-                                    <p>{profileData.appreId[0].appreDesc}</p>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.appreId[1].appreImage
-                                          .formats.medium.url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>{profileData.appreId[1].appreUser}</p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {profileData.appreId[1].appreRole}
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-8">
-                                    <p>{profileData.appreId[1].appreDesc}</p>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.appreId[2].appreImage
-                                          .formats.medium.url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>{profileData.appreId[2].appreUser}</p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {profileData.appreId[2].appreRole}
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-8">
-                                    <p>{profileData.appreId[2].appreDesc}</p>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.appreId[3].appreImage
-                                          .formats.medium.url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>{profileData.appreId[3].appreUser}</p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {profileData.appreId[3].appreRole}
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-8">
-                                    <p>{profileData.appreId[3].appreDesc}</p>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="row">
-                                  <div className="col-sm-1">
-                                    <Avatar
-                                      src={
-                                        profileData.appreId[4].appreImage
-                                          .formats.medium.url
-                                      }
-                                      round="50px"
-                                      size={35}
-                                    />
-                                  </div>
-                                  <div className="col-sm-1">
-                                    <p>{profileData.appreId[4].appreUser}</p>
-                                  </div>
-                                  <div className="col-sm-2">
-                                    <p className="putihtextcolor">
-                                      <Badge>
-                                        {profileData.appreId[4].appreRole}
-                                      </Badge>
-                                    </p>
-                                  </div>
-                                  <div className="col-sm-8">
-                                    <p>{profileData.appreId[4].appreDesc}</p>
-                                  </div>
-                                </div>
-                              </li>
+                              {profileData.appreId
+                                .slice(0, 5)
+                                .map((appreData) => (
+                                  <li>
+                                    <div className="row">
+                                      <div className="col-sm-1">
+                                        <Avatar
+                                          src={
+                                            appreData.appreImage.formats
+                                              .thumbnail.url
+                                          }
+                                          round="50px"
+                                          size={35}
+                                        />
+                                      </div>
+                                      <div className="col-sm-1">
+                                        <p>{appreData.appreUser}</p>
+                                      </div>
+                                      <div className="col-sm-2">
+                                        <p className="putihtextcolor">
+                                          <Badge>{appreData.appreRole}</Badge>
+                                        </p>
+                                      </div>
+                                      <div className="col-sm-8">
+                                        <p>{appreData.appreDesc}</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                ))}
                             </ul>
                           </div>
                         </div>
