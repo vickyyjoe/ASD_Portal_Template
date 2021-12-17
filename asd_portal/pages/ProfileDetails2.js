@@ -203,7 +203,10 @@ function ProfileDetails2({
                                     <div className="icon-bx-sm radius m-b20">
                                       <a href="/" className="icon-cell">
                                         <Avatar
-                                          src={skillData.skillImage.url}
+                                          src={
+                                            skillData.skillImage.formats
+                                              .thumbnail.url
+                                          }
                                           round="50px"
                                           size={75}
                                         />
@@ -237,7 +240,10 @@ function ProfileDetails2({
                                   <div className="icon-bx-sm radius m-b20">
                                     <a href="/" className="icon-cell">
                                       <Avatar
-                                        src={toolData.toolImage.url}
+                                        src={
+                                          toolData.toolImage.formats.thumbnail
+                                            .url
+                                        }
                                         round="50px"
                                         size={75}
                                       />
