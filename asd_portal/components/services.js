@@ -1,17 +1,8 @@
-import { Component } from "react";
-import { Parallax } from "react-parallax";
 import Link from "next/link";
 import Header from "./Header";
-import CounterSection from "./element/CounterSection";
-import Counter from "./element/Counter";
-import Testimonial from "./element/Testimonial";
 import Footer from "./Footer";
 import ServicesSlider3 from "./element/servicesSlider3";
-import {
-  projectContent1,
-  serviceContent2,
-  homeSliderContent4,
-} from "./element/SliderContent";
+
 
 const bg = "/images/banner/bnr2.jpg";
 const bg2 = "/images/background/bg4.jpg";
