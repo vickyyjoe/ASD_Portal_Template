@@ -30,9 +30,9 @@ const faqContent=[
     },
 ]
 
-export class franchise extends Component {
-    render() {
-      return (
+function franchise({ procedures, pricings,faqs}) {
+    console.log(faqs)
+    return (
         <div className="skin-1">
         <Header></Header>
             <div class="section-full content-inner bg-white">
@@ -40,61 +40,18 @@ export class franchise extends Component {
                     <div class="section-head text-center">
                         <h2 class="title">Procedure</h2>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
-                            <div class="icon-bx-wraper bx-style-2 m-l40 p-a30 left bg-gray icon-bx-ho">
-                                <div class="icon-bx-sm bg-primary m-b20"><span class="icon-cell"><i class="flaticon-robot-arm"></i></span> </div>
-                                <div class="icon-content p-l40">
-                                    <h5 class="dlab-tilte">lorem ipsum</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod..</p>
+                    <div class="section-content row">
+                        {procedures && procedures.slice(0,6).map((procedure, procedurekey) =>(
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
+                                <div class="icon-bx-wraper bx-style-2 m-l40 p-a30 left bg-gray icon-bx-ho">
+                                    <div class="icon-bx-sm bg-primary m-b20"><span class="icon-cell"><i>{procedure.id}</i></span> </div>
+                                    <div class="icon-content p-l40">
+                                        <h5 class="dlab-tilte">{procedure.procedureName}</h5>
+                                        <p>{procedure.procedureDesc}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
-                            <div class="icon-bx-wraper bx-style-2 m-l40 p-a30 left bg-gray icon-bx-ho">
-                                <div class="icon-bx-sm bg-primary m-b20"><Link href="#" class="icon-cell"><i class="flaticon-factory-1"></i></Link> </div>
-                                <div class="icon-content p-l40">
-                                    <h5 class="dlab-tilte">lorem ipsum</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod..</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-                            <div class="icon-bx-wraper bx-style-2 m-l40 p-a30 left bg-gray icon-bx-ho">
-                                <div class="icon-bx-sm bg-primary m-b20"><Link href="#" class="icon-cell"><i class="flaticon-fuel-station"></i></Link> </div>
-                                <div class="icon-content p-l40">
-                                    <h5 class="dlab-tilte">lorem ipsum</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod..</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
-                            <div class="icon-bx-wraper bx-style-2 m-l40 p-a30 left bg-gray icon-bx-ho">
-                                <div class="icon-bx-sm bg-primary m-b20"><Link href="#" class="icon-cell"><i class="flaticon-conveyor-1"></i></Link> </div>
-                                <div class="icon-content p-l40">
-                                    <h5 class="dlab-tilte">lorem ipsum</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod..</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                            <div class="icon-bx-wraper bx-style-2 m-l40 p-a30 left bg-gray icon-bx-ho">
-                                <div class="icon-bx-sm bg-primary m-b20"><Link href="#" class="icon-cell"><i class="flaticon-engineer-1"></i></Link> </div>
-                                <div class="icon-content p-l40">
-                                    <h5 class="dlab-tilte">lorem ipsum</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod..</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-                            <div class="icon-bx-wraper bx-style-2 m-l40 p-a30 left bg-gray icon-bx-ho">
-                                <div class="icon-bx-sm bg-primary m-b20"><Link href="#" class="icon-cell"><i class="flaticon-robot-arm"></i></Link> </div>
-                                <div class="icon-content p-l40">
-                                    <h5 class="dlab-tilte">lorem ipsum</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod..</p>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -161,60 +118,69 @@ export class franchise extends Component {
                             <div class="section-content box-sort-in button-example p-tb50">
                                 <div class="pricingtable-row">
                                     <div class="row">
-                                        <div class="col-sm-12 col-md-4 col-lg-4">
-                                            <div class="pricingtable-wrapper">
-                                                <div class="pricingtable-inner">
-                                                    <div class="pricingtable-price"> <span class="pricingtable-bx">$10</span> <span class="pricingtable-type">Month</span> </div>
-                                                    <div class="pricingtable-title bg-primary">
-                                                        <h2>Basic</h2>
+
+                                        {pricings && pricings.slice(0,1).map((pricing, pricingkey)=>(
+                                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                                <div class="pricingtable-wrapper">
+                                                    <div class="pricingtable-inner">
+                                                        <div class="pricingtable-price"> <span class="pricingtable-bx">Rp {pricing.price}</span> </div>
+                                                        <div class="pricingtable-title bg-primary">
+                                                            <h2>{pricing.priceName}</h2>
+                                                        </div>
+                                                        <span>
+                                                            {pricing.pricingdetailId.map((pd)=> (
+                                                                <ul class="pricingtable-features">
+                                                                    <li><i class="fa fa-check"></i>{pd.pricingDesc}</li>
+                                                                </ul>
+                                                            ))}
+                                                        </span>
+                                                        <div class="pricingtable-footer"> <a href="javascript:void(0);" class="site-button ">Buy</a> </div>
                                                     </div>
-                                                    <ul class="pricingtable-features">
-                                                        <li><i class="fa fa-check"></i> Full Responsive </li>
-                                                        <li><i class="fa fa-check"></i> Multi color theme</li>
-                                                        <li><i class="fa fa-check"></i> With Bootstrap</li>
-                                                        <li><i class="fa fa-check"></i> Easy to customize</li>
-                                                        <li><i class="fa fa-check"></i> Many Sortcodes</li>
-                                                    </ul>
-                                                    <div class="pricingtable-footer"> <a href="javascript:void(0);" class="site-button ">Sign Up</a> </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-4 col-lg-4">
-                                            <div class="pricingtable-wrapper">
-                                                <div class="pricingtable-inner pricingtable-highlight">
-                                                    <div class="pricingtable-price"> <span class="pricingtable-bx">$12</span> <span class="pricingtable-type">Month</span> </div>
-                                                    <div class="pricingtable-title bg-primary">
-                                                        <h2>Basic</h2>
+                                        ))}
+
+                                        {pricings && pricings.slice(2,3).map((pricing)=>(
+                                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                                <div class="pricingtable-wrapper">
+                                                    <div class="pricingtable-inner pricingtable-highlight">
+                                                        <div class="pricingtable-price"> <span class="pricingtable-bx">Rp {pricing.price}</span></div>
+                                                        <div class="pricingtable-title bg-primary">
+                                                            <h2>{pricing.priceName}</h2>
+                                                        </div>
+                                                        <span>
+                                                            {pricing.pricingdetailId.map((pd)=> (
+                                                                <ul class="pricingtable-features">
+                                                                    <li><i class="fa fa-check"></i>{pd.pricingDesc}</li>
+                                                                </ul>
+                                                            ))}
+                                                        </span>
+                                                        <div class="pricingtable-footer"> <a href="javascript:void(0);" class="site-button ">Buy</a> </div>
                                                     </div>
-                                                    <ul class="pricingtable-features">
-                                                        <li><i class="fa fa-check"></i> Full Responsive </li>
-                                                        <li><i class="fa fa-check"></i> Multi color theme</li>
-                                                        <li><i class="fa fa-check"></i> With Bootstrap</li>
-                                                        <li><i class="fa fa-check"></i> Easy to customize</li>
-                                                        <li><i class="fa fa-check"></i> Many Sortcodes</li>
-                                                    </ul>
-                                                    <div class="pricingtable-footer"> <a href="javascript:void(0);" class="site-button ">Sign Up</a> </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-4 col-lg-4">
-                                            <div class="pricingtable-wrapper">
-                                                <div class="pricingtable-inner">
-                                                    <div class="pricingtable-price"> <span class="pricingtable-bx">$18</span> <span class="pricingtable-type">Month</span> </div>
-                                                    <div class="pricingtable-title bg-primary">
-                                                        <h2>Basic</h2>
+                                        ))}
+
+                                        {pricings && pricings.slice(1,2).map((pricing, pricingkey)=>(
+                                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                                <div class="pricingtable-wrapper">
+                                                    <div class="pricingtable-inner">
+                                                        <div class="pricingtable-price"> <span class="pricingtable-bx">Rp{pricing.price}</span> </div>
+                                                        <div class="pricingtable-title bg-primary">
+                                                            <h2>{pricing.priceName}</h2>
+                                                        </div>
+                                                        <span>
+                                                            {pricing.pricingdetailId.map((pd)=> (
+                                                                <ul class="pricingtable-features">
+                                                                    <li><i class="fa fa-check"></i>{pd.pricingDesc}</li>
+                                                                </ul>
+                                                            ))}
+                                                        </span>
+                                                        <div class="pricingtable-footer"> <a href="javascript:void(0);" class="site-button ">Buy</a> </div>
                                                     </div>
-                                                    <ul class="pricingtable-features">
-                                                        <li><i class="fa fa-check"></i> Full Responsive </li>
-                                                        <li><i class="fa fa-check"></i> Multi color theme</li>
-                                                        <li><i class="fa fa-check"></i> With Bootstrap</li>
-                                                        <li><i class="fa fa-check"></i> Easy to customize</li>
-                                                        <li><i class="fa fa-check"></i> Many Sortcodes</li>
-                                                    </ul>
-                                                    <div class="pricingtable-footer"> <a href="javascript:void(0);" class="site-button">Sign Up</a> </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +193,7 @@ export class franchise extends Component {
                     <div class="container">
                         <div class="section-head text-black text-center">
                             <h3 class="title">Do you have Questions?</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                            <p>Anda dapat melihat jawaban dari pertanyaan yang paling sering kami dapatkan.</p>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-12 m-b30"> 
@@ -240,9 +206,9 @@ export class franchise extends Component {
                             <div class="col-lg-6 col-md-12 m-b30">
                                 <Accordion className="accordian dlab-accordion faq-1 box-sort-in m-b30 faq">
                                     {
-                                        faqContent.map(faq =>(
-                                            <AccordionItem title={faq.question} className="accodion-title" titleTag="h6">
-                                                {faq.answer}
+                                        faqs && faqs.map(faq =>(
+                                            <AccordionItem title={faq.faqName} className="accodion-title" titleTag="h6">
+                                                {faq.faqDesc}
                                             </AccordionItem>  
                                         ))
                                     }
@@ -254,8 +220,7 @@ export class franchise extends Component {
             </div>
         <Footer></Footer>
         </div>
-      )
-    }
+      );
 }
 
 export default franchise;
