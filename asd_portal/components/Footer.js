@@ -48,7 +48,7 @@ class Footer extends Component {
                           Company Address
                         </h5>
                         <p class="op7">
-                          Demo address #8901 Marmora Road Chi Minh City, Vietnam
+                          Jl. Let. Jend Suprapto Kav 4 Jakarta 10510 - Indonesia
                         </p>
                       </div>
                     </div>
@@ -62,8 +62,8 @@ class Footer extends Component {
                           </span>
                           E-mail
                         </h5>
-                        <p class="m-b0 op7">info@example.com</p>
-                        <p class="op7">company@example.com</p>
+                        <p class="m-b0 op7">Corp.Comm@kalbe.co.id</p>
+                        <p class="op7">asd_portal@kalbe.co.id</p>
                       </div>
                     </div>
                   </div>
@@ -76,8 +76,8 @@ class Footer extends Component {
                           </span>
                           Phone Numbers
                         </h5>
-                        <p class="m-b0 op7">Mobile : +00 234 678 9012</p>
-                        <p class="op7">Phone : +00 1234 5678 90</p>
+                        <p class="m-b0 op7">Mobile : 6221-42873888-89</p>
+                        <p class="op7">Phone : 6221-4256326</p>
                       </div>
                     </div>
                   </div>
@@ -90,8 +90,8 @@ class Footer extends Component {
                           </span>
                           Office Hours
                         </h5>
-                        <p class="m-b0 op7">Mon To Sat - 08.00-18.00</p>
-                        <p class="op7">Sunday - Close</p>
+                        <p class="m-b0 op7">Mon To Fri - 07.30-16.00</p>
+                        <p class="op7">Weekend - Close</p>
                       </div>
                     </div>
                   </div>
@@ -105,25 +105,24 @@ class Footer extends Component {
               <div class="row">
                 <div class="col-md-4 col-sm-6">
                   <div class="widget widget_about">
-                    <h4 class="footer-title">About Industry</h4>
+                    <h4 class="footer-title">About Us</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard.
+                      A helping platform to product digitalizing for user who
+                      needed some dynamic modern feature on their services.
                     </p>
-                    Read More
+                    Read More In About Us Page
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                   <div class="widget">
-                    <h4 class="footer-title">Usefull div</h4>
+                    <h4 class="footer-title">Pages</h4>
                     <ul class="list-2">
                       <li>About Us</li>
-                      <li>Blog</li>
-                      <li>Services</li>
-                      <li>Privacy Policy</li>
-                      <li>Projects</li>
-                      <li>Help Desk</li>
+                      <li>Home</li>
+                      <li>Service</li>
+                      <li>Franchise</li>
+                      <li>Portfolio</li>
+                      <li>Profile</li>
                       <li>Shop</li>
                       <li>Contact</li>
                     </ul>
@@ -131,10 +130,10 @@ class Footer extends Component {
                 </div>
                 <div class="col-md-4 col-sm-12">
                   <div class="widget widget_subscribe">
-                    <h4 class="footer-title">Usefull div</h4>
+                    <h4 class="footer-title">NewsLetter</h4>
                     <p>
-                      If you have any questions. Subscribe to our newsletter to
-                      get our latest products.
+                      Subscribe to our newsletter to get notifications about our
+                      latest products.
                     </p>
                     <form
                       class="dzSubscribe"
@@ -173,24 +172,25 @@ class Footer extends Component {
               <div class="footer-bottom-in">
                 <div class="footer-bottom-logo">
                   <Link href={"/"}>
-                    <img src={"logo white.png"} alt="" width={70}/>
+                    <img src={"logo white.png"} alt="" width={70} />
                   </Link>
                 </div>
                 <div class="footer-bottom-social">
                   <ul class="dlab-social-icon dez-border">
                     <li>
-                      <Link href={"/#"}>
+                      <Link
+                        href={"https://id.linkedin.com/company/pt-kalbe-farma"}
+                      >
                         <a>
                           <div className="fa fa-linkedin"></div>
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <a>
+                      <a href="https://www.youtube.com/channel/UCGwTgp5lmU7bdCKEFLxidtA">
                         <div class="fa fa-youtube-play" to={"/#"}></div>
                       </a>
                     </li>
-                    
                   </ul>
                 </div>
               </div>
