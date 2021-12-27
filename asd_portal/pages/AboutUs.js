@@ -68,7 +68,7 @@ function AboutUs({ partners, ourteams }) {
                       <p className="m-b30">
                         A helping platform to product digitalizing for user who
                         needed some dynamic modern feature on their services.
-                        SIMPLY ORDER AND GO!
+                        SIMPLY CHOOSE and ORDER!
                       </p>
                     </div>
                   </div>
