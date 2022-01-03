@@ -23,6 +23,7 @@ const urlCloud = "https://res.cloudinary.com/asd-portal-media/image/upload";
 
 function App({ ourServices, TestimonialDatas, ourTeams }) {
   console.log(TestimonialDatas);
+  
   const ReadMore = ({ children }) => {
     const text = children;
     const [isReadMore, setIsReadMore] = useState(true);
@@ -301,7 +302,7 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
         </div>
       </div>
 
-      <Footer></Footer>
+      <Footer hideContactInfo displayNewsLetter></Footer>
     </div>
   );
 }

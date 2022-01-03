@@ -108,7 +108,7 @@ function services({ ourServices, toolDatas }) {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer hideContactInfo displayNewsLetter></Footer>
     </div>
   );
 }

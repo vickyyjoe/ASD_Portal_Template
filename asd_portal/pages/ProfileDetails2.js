@@ -404,7 +404,7 @@ function ProfileDetails2({
           </div>
         ))}
 
-      <Footer></Footer>
+      <Footer hideContactInfo displayNewsLetter></Footer>
     </>
   );
 }

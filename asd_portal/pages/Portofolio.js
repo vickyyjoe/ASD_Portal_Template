@@ -39,7 +39,7 @@ function Portofolio({ portofolios }) {
 
         <PortfolioCard col="col-md-4" portfolios={portofolios} />
       </div>
-      <Footer />
+      <Footer hideContactInfo displayNewsLetter/>
     </>
   );
 }

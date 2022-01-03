@@ -103,7 +103,7 @@ function OurTeam({ ourTeamHead, ourTeamIntern }) {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer hideContactInfo displayNewsLetter></Footer>
     </>
   );
 }

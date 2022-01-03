@@ -153,7 +153,7 @@ function AboutUs({ partners, ourteams }) {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer hideContactInfo displayNewsLetter></Footer>
     </>
   );
 }

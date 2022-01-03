@@ -301,7 +301,7 @@ function franchise({ procedures, pricings, faqs }) {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer hideContactInfo displayNewsLetter></Footer>
     </div>
   );
 }
