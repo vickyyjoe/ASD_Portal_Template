@@ -70,6 +70,18 @@ function AboutUs({ partners, ourteams }) {
                         needed some dynamic modern feature on their services.
                         SIMPLY CHOOSE and ORDER!
                       </p>
+                      <div className="row m-t10 m-l5">
+                        <div className="col-lg-12 text-center ">
+                          <Link href={"/Portofolio"}>
+                            <button
+                              className="site-button yellow m-r15 radius-xl box-shadow "
+                              type="button"
+                            >
+                              Go To Portofolio
+                            </button>
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -128,12 +140,12 @@ function AboutUs({ partners, ourteams }) {
               <div className="row m-t10 m-l5">
                 <div className="col-lg-12 text-center ">
                   <Link href={"/OurTeam"}>
-                  <button
-                    className="site-button yellow m-r15 radius-xl box-shadow "
-                    type="button"
-                  >
-                    View All
-                  </button>
+                    <button
+                      className="site-button yellow m-r15 radius-xl box-shadow "
+                      type="button"
+                    >
+                      View All
+                    </button>
                   </Link>
                 </div>
               </div>
