@@ -35,7 +35,7 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
         <span onClick={toggleReadMore} className="read-or-hide">
           <div className="buttons">
             <br></br>
-            <a> {isReadMore ? "Read More" : " show less"}</a>
+            <a> {isReadMore ? "Read More" : " Show Less"}</a>
             <Link href={"/AboutUs"}>
               <a>About Us</a>
             </Link>
@@ -199,6 +199,18 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
                       needed some dynamic modern feature on their services.
                       SIMPLY ORDER AND GO!
                     </p>
+                    <div className="row m-t10 m-l5">
+                      <div className="col-lg-12 text-center ">
+                        <Link href={"/Portofolio"}>
+                          <button
+                            className="site-button yellow m-r15 radius-xl box-shadow "
+                            type="button"
+                          >
+                            Go To Portofolio
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
