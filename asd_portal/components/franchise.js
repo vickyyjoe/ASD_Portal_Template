@@ -8,8 +8,6 @@ import Footer from "./Footer";
 var bg1 = "/images/background/bg1.jpg";
 const bg = "/images/banner/bnr2.jpg";
 
-
-
 function franchise({ procedures, pricings, faqs }) {
   console.log(faqs);
   return (
@@ -271,7 +269,9 @@ function franchise({ procedures, pricings, faqs }) {
                     <i class="flaticon-play-button text-white"></i>
                   </Link>
                   <img
-                    src={"/images/about/pic5.jpg"}
+                    src={
+                      "https://res.cloudinary.com/asd-portal-media/image/upload/v1639239602/kalbe_7172475ef3.jpg"
+                    }
                     alt=""
                     class="img-cover radius-sm"
                   />

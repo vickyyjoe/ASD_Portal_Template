@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
               <div>L</div>
             </div>
           </div> */}
-          <div class="containerloading">
+          <div className="containerloading ">
             <div class="dot dot-1"></div>
             <div class="dot dot-2"></div>
             <div class="dot dot-3"></div>

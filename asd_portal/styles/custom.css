@@ -15,7 +15,7 @@
 body {
   background: white;
 }
-
+/* 
 #load {
   position: absolute;
   width: 50%;
@@ -190,7 +190,7 @@ body {
     transform: rotate(-180deg);
     opacity: 0;
   }
-}
+} */
 
 
 
