@@ -26,7 +26,7 @@ function ProfileDetails2({
           <div className="page-content bg-gray " key={profileData.id}>
             <div className="section-full bg-gray m-b30">
               <div className="container">
-                <div className="gambarlatar halamanmargin overlay-black-dark bg-img-fix "></div>
+                <div className="gambarlatar halamanmargin overlay-black-light bg-img-fix "></div>
                 <div className="container bayangan halamanmargin">
                   <div className="row">
                     <div className="col-md-2 photo">

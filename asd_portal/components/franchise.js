@@ -6,40 +6,34 @@ import Counter from "./element/Counter";
 import Footer from "./Footer";
 
 var bg1 = "/images/background/bg1.jpg";
+const bg = "/images/banner/bnr2.jpg";
 
-const faqContent = [
-  {
-    question: "1. Web design aorem apsum dolor sit amet?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ratione natus, reiciendis at debitis aliquid. Tenetur sunt id voluptatibus vitae ",
-  },
-  {
-    question: "2. Graphic design aorem apsum dolor ?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ratione natus, reiciendis at debitis aliquid. Tenetur sunt id voluptatibus vitae ",
-  },
-  {
-    question: "3. Developement aorem apsum dolor sit amet ? ",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ratione natus, reiciendis at debitis aliquid. Tenetur sunt id voluptatibus vitae ",
-  },
-  {
-    question: "4. True Responsiveness consectetuer adipiscing ? ",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ratione natus, reiciendis at debitis aliquid. Tenetur sunt id voluptatibus vitae ",
-  },
-  {
-    question: "5. Claritas est etiam processus ?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ratione natus, reiciendis at debitis aliquid. Tenetur sunt id voluptatibus vitae ",
-  },
-];
+
 
 function franchise({ procedures, pricings, faqs }) {
   console.log(faqs);
   return (
     <div className="skin-1">
       <Header></Header>
+      <div
+        class="dlab-bnr-inr overlay-black-middle bg-pt"
+        style={{ backgroundImage: "url(" + bg + ")" }}
+      >
+        <div class="container">
+          <div class="dlab-bnr-inr-entry">
+            <h1 class="text-white">Franchise</h1>
+            <div class="breadcrumb-row">
+              <ul class="list-inline">
+                <li>
+                  <Link href="/">Home</Link>
+                </li>
+                <li>Franchise</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="section-full content-inner bg-white">
         <div class="container">
           <div class="section-head text-center">
