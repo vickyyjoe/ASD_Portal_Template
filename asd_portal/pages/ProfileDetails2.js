@@ -201,7 +201,7 @@ function ProfileDetails2({
                                 <div className="col-lg-4">
                                   <div className="text-center">
                                     <div className="icon-bx-sm radius m-b20">
-                                      <a href="/" className="icon-cell">
+                                      <a className="icon-cell">
                                         <Avatar
                                           src={
                                             skillData.skillImage.formats
@@ -238,7 +238,7 @@ function ProfileDetails2({
                               <div className="col-lg-4">
                                 <div className="text-center">
                                   <div className="icon-bx-sm radius m-b20">
-                                    <a href="/" className="icon-cell">
+                                    <a  className="icon-cell">
                                       <Avatar
                                         src={
                                           toolData.toolImage.formats.thumbnail
