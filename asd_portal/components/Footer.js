@@ -110,21 +110,31 @@ class Footer extends Component {
                       A helping platform to product digitalizing for user who
                       needed some dynamic modern feature on their services.
                     </p>
-                    Read More In About Us Page
+                    Read More In <Link href={"/AboutUs"}>About Us</Link> Page
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                   <div class="widget">
                     <h4 class="footer-title">Pages</h4>
-                    <ul class="list-2">
-                      <li>About Us</li>
-                      <li>Home</li>
-                      <li>Service</li>
-                      <li>Franchise</li>
-                      <li>Portfolio</li>
-                      <li>Profile</li>
-                      <li>Shop</li>
-                      <li>Contact</li>
+                    <ul class="list-2 changeunderline">
+                      <li>
+                        <a href={"/AboutUs"}>About Us</a>
+                      </li>
+                      <li>
+                        <a href={"/"}>Home</a>
+                      </li>
+                      <li>
+                        <a href={"/Service"}>Service</a>
+                      </li>
+                      <li>
+                        <a href={"/Franchise"}>Franchise</a>
+                      </li>
+                      <li>
+                        <a href={"/Portfolio"}>Portfolio</a>
+                      </li>
+                      <li>
+                        <a href={"/ProfileDetails2"}>Profile</a>
+                      </li>
                     </ul>
                   </div>
                 </div>

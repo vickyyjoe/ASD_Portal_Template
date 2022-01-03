@@ -12,7 +12,7 @@ function TahapDevelopment() {
   return (
     <>
       <Head>
-        <title>404</title>
+        <title>!On Construction!</title>
         <link rel="shortcut icon" href="kalbe.ico" />
       </Head>
 
