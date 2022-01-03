@@ -396,16 +396,6 @@ function ProfileDetails2({
                     <Testmonial10
                       testimonialData={TestimonialDatas}
                     ></Testmonial10>
-                    <div className="row m-t10 m-l5">
-                      <div className="col-lg-12 text-center ">
-                        <button
-                          className="site-button yellow m-r15 radius-xl box-shadow "
-                          type="button"
-                        >
-                          View All
-                        </button>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

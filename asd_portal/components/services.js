@@ -3,7 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import ServicesSlider3 from "./element/servicesSlider3";
 
-
 const bg = "/images/banner/bnr2.jpg";
 const bg2 = "/images/background/bg4.jpg";
 const bg3 = "/images/background/map-bg.png";
@@ -53,7 +52,9 @@ function services({ ourServices, toolDatas }) {
                         <div class="icon-bx-wraper" data-name={ourservice.id}>
                           <div class="icon-lg">
                             <img
-                              src={ourservice.serviceImage.formats.small.url}
+                              src={
+                                ourservice.serviceImage.formats.thumbnail.url
+                              }
                             />
                           </div>
                           <div class="icon-content">
@@ -75,10 +76,12 @@ function services({ ourServices, toolDatas }) {
                       Let's Convert Your Idea into Reality by clicking this
                       button down below!!!
                     </p>
-                    <button name="submit" class="site-button button-lg">
-                      {" "}
-                      Go to franchise{" "}
-                    </button>
+                    <Link href={"/franchise"}>
+                      <button name="submit" class="site-button button-lg">
+                        {" "}
+                        Go to franchise{" "}
+                      </button>
+                    </Link>
                   </form>
                 </div>
               </div>

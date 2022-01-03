@@ -34,6 +34,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <>
+      
       {loading ? (
         <div class="content">
           <div id="load">
@@ -47,6 +48,7 @@ function MyApp({ Component, pageProps }) {
           </div>
         </div>
       ) : (
+        
         <Component {...pageProps} />
       )}
     </>

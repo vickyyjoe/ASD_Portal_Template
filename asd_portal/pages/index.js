@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, Component } from "react";
 import Head from "next/head";
 
 import { Parallax } from "react-parallax";
@@ -23,6 +23,27 @@ const urlCloud = "https://res.cloudinary.com/asd-portal-media/image/upload";
 
 function App({ ourServices, TestimonialDatas, ourTeams }) {
   console.log(TestimonialDatas);
+  const ReadMore = ({ children }) => {
+    const text = children;
+    const [isReadMore, setIsReadMore] = useState(true);
+    const toggleReadMore = () => {
+      setIsReadMore(!isReadMore);
+    };
+    return (
+      <p className="text">
+        {isReadMore ? text.slice(0, 82) : text}
+        <span onClick={toggleReadMore} className="read-or-hide">
+          <div className="buttons">
+            <br></br>
+            <a> {isReadMore ? "Read More" : " show less"}</a>
+            <Link href={"/AboutUs"}>
+              <a>About Us</a>
+            </Link>
+          </div>
+        </span>
+      </p>
+    );
+  };
   return (
     <div className="skin-1">
       <Head>
@@ -38,14 +59,13 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
                 <div className="hero-content">
                   <h1 className="title">ASD Portal Product Digitalization</h1>
                   <div className="description">
-                    ASD Portal is a platform that helps people to reach their
-                    business digitalization. Over million tickets completely
-                    fixed/done by ASD Portal.
+                    <ReadMore>
+                      ASD Portal is a platform that helps people to reach their
+                      business digitalization. Over million tickets completely
+                      fixed/done by ASD Portal
+                    </ReadMore>
                   </div>
-                  <div className="buttons">
-                    <a href="">Read More</a>
-                    <a href="">About Us</a>
-                  </div>
+
                   <br></br>
                 </div>
               </div>
@@ -78,7 +98,9 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
                 >
                   <div className="icon-bx-wraper" data-name={ourservice.id}>
                     <div className="icon-lg">
-                      <img src={ourservice.serviceImage.formats.small.url} />
+                      <img
+                        src={ourservice.serviceImage.formats.thumbnail.url}
+                      />
                     </div>
                     <div className="icon-content">
                       <h2 className="dlab-tilte">{ourservice.serviceName}</h2>
@@ -218,6 +240,18 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
                       </div>
                     ))}
                 </div>
+                <div className="row m-t10 m-l5">
+                  <div className="col-lg-12 text-center ">
+                    <Link href={"/OurTeam"}>
+                      <button
+                        className="site-button yellow m-r15 radius-xl box-shadow "
+                        type="button"
+                      >
+                        View All
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </div>
               <div className="col-lg-6">
                 <div clas="row">
@@ -228,7 +262,7 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
 
                 <div className="section-content box-sort-in m-b10 p-b0 button-example m-b12">
                   {ourTeams &&
-                    ourTeams.slice(0, 8).map((ourTeam, ourTeamKey) => (
+                    ourTeams.slice(0, 10).map((ourTeam, ourTeamKey) => (
                       <ul className="list-cup red list-box">
                         <li> {ourTeam.userId.userName} </li>
                       </ul>
