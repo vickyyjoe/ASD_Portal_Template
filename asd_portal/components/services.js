@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import ServicesSlider3 from "./element/servicesSlider3";
 
-const bg = "/images/banner/bnr2.jpg";
+const bg = "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
 const bg2 = "/images/background/bg4.jpg";
 const bg3 = "/images/background/map-bg.png";
 const bg4 = "/1.jpg";

@@ -6,7 +6,7 @@ import Counter from "./element/Counter";
 import Footer from "./Footer";
 
 var bg1 = "/images/background/bg1.jpg";
-const bg = "/images/banner/bnr2.jpg";
+const bg = "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
 
 function franchise({ procedures, pricings, faqs }) {
   console.log(faqs);

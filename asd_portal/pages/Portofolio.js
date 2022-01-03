@@ -6,7 +6,7 @@ import PortfolioCard from "../components/element/PortfolioCard";
 import Head from "next/head";
 import axios from "axios";
 
-const bg = "/images/banner/bnr4.jpg";
+const bg = "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
 
 function Portofolio({ portofolios }) {
   // console.log(portofolios);

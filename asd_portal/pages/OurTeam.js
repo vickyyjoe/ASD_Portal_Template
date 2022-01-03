@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import axios from "axios";
 
-var bnr3 = "/images/banner/bnr3.jpg";
+var bnr3 = "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
 function OurTeam({ ourTeamHead, ourTeamIntern }) {
   return (
     <>
