@@ -1,16 +1,15 @@
 import { Component } from "react";
 import Link from "next/link";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Head from "next/head";
 
-
-const bg = ('/images/banner/bnr4.jpg')
+const bg = "/images/banner/bnr4.jpg";
 export class ProjectDetails extends Component {
   render() {
     return (
       <>
-      <Head>
+        <Head>
           <title>Project Detail</title>
           <link rel="shortcut icon" href="kalbe.ico" />
         </Head>
@@ -141,28 +140,16 @@ export class ProjectDetails extends Component {
                   <div class="col-lg-6">
                     <div class="row">
                       <div class="col-lg-12 m-b30">
-                        <img
-                          alt=""
-                          src={("/images/about/pic3.jpg")}
-                        />
+                        <img alt="" src={"/images/about/pic3.jpg"} />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-                        <img
-                          alt=""
-                          src={("/images/our-services/pic2.jpg")}
-                        />
+                        <img alt="" src={"/images/our-services/pic2.jpg"} />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-                        <img
-                          alt=""
-                          src={("/images/our-services/pic3.jpg")}
-                        />
+                        <img alt="" src={"/images/our-services/pic3.jpg"} />
                       </div>
                       <div class="col-lg-12 m-b30">
-                        <img
-                          alt=""
-                          src={("/images/about/about2.jpg")}
-                        />
+                        <img alt="" src={"/images/about/about2.jpg"} />
                       </div>
                     </div>
                   </div>
