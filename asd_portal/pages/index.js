@@ -78,7 +78,9 @@ function App({ ourServices, TestimonialDatas, ourTeams }) {
                 >
                   <div className="icon-bx-wraper" data-name={ourservice.id}>
                     <div className="icon-lg">
-                      <img src={ourservice.serviceImage.formats.small.url} />
+                      <img
+                        src={ourservice.serviceImage.formats.thumbnail.url}
+                      />
                     </div>
                     <div className="icon-content">
                       <h2 className="dlab-tilte">{ourservice.serviceName}</h2>
