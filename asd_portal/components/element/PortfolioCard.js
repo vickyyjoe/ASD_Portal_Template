@@ -71,7 +71,7 @@ const PortfolioCard = ({ portfolios }) => {
                     <div className={collumnCls} key={filteredList.id}>
                       <div className="dlab-box dlab-gallery-box">
                         <div className="dlab-media dlab-img-overlay1 dlab-img-effect">
-                          <Link href="/">
+                          <Link href={"/Portofolio/" + filteredList.id}>
                             <a>
                               <img
                                 src={
