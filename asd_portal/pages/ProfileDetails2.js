@@ -26,7 +26,7 @@ function ProfileDetails2({
           <div className="page-content bg-gray " key={profileData.id}>
             <div className="section-full bg-gray m-b30">
               <div className="container">
-                <div className="gambarlatar halamanmargin overlay-black-dark bg-img-fix "></div>
+                <div className="gambarlatar halamanmargin overlay-black-light bg-img-fix "></div>
                 <div className="container bayangan halamanmargin">
                   <div className="row">
                     <div className="col-md-2 photo">
@@ -201,7 +201,7 @@ function ProfileDetails2({
                                 <div className="col-lg-4">
                                   <div className="text-center">
                                     <div className="icon-bx-sm radius m-b20">
-                                      <a href="/" className="icon-cell">
+                                      <a className="icon-cell">
                                         <Avatar
                                           src={
                                             skillData.skillImage.formats
@@ -238,7 +238,7 @@ function ProfileDetails2({
                               <div className="col-lg-4">
                                 <div className="text-center">
                                   <div className="icon-bx-sm radius m-b20">
-                                    <a href="/" className="icon-cell">
+                                    <a  className="icon-cell">
                                       <Avatar
                                         src={
                                           toolData.toolImage.formats.thumbnail
@@ -396,16 +396,6 @@ function ProfileDetails2({
                     <Testmonial10
                       testimonialData={TestimonialDatas}
                     ></Testmonial10>
-                    <div className="row m-t10 m-l5">
-                      <div className="col-lg-12 text-center ">
-                        <button
-                          className="site-button yellow m-r15 radius-xl box-shadow "
-                          type="button"
-                        >
-                          View All
-                        </button>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -414,7 +404,7 @@ function ProfileDetails2({
           </div>
         ))}
 
-      <Footer></Footer>
+      <Footer hideContactInfo displayNewsLetter></Footer>
     </>
   );
 }

@@ -7,7 +7,7 @@ const Counter = ({count}) => {
         <CountUp end={count} redraw={true}>
             {({ countUpRef, start }) => (
                 <VisibilitySensor onChange={start} delayedCall>
-                    <span class="dlab-title counter" ref={countUpRef}>count</span>
+                    <span className="dlab-title counter" ref={countUpRef}>count</span>
                 </VisibilitySensor>
             )}
         </CountUp>

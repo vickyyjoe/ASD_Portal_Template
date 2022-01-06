@@ -84,21 +84,11 @@ const PortfolioCard = ({ portfolios }) => {
                           <div className="overlay-bx">
                             <div className="overlay-icon">
                               <div className="text-white">
-                                <Link href="/ProjectDetails">
+                                <Link href="/TahapDevelopment">
                                   <a className="falinkwarna">
                                     <i className="fa fa-link icon-bx-xs"></i>
                                   </a>
                                 </Link>
-                                <a
-                                  href={
-                                    filteredList.portfolioImage.formats.small
-                                      .url
-                                  }
-                                >
-                                  <span className="check-km" title="Image">
-                                    <i className="fa fa-picture-o icon-bx-xs"></i>
-                                  </span>
-                                </a>
                               </div>
                             </div>
                           </div>

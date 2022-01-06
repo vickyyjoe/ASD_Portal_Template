@@ -6,7 +6,7 @@ import PartnersCarousel from "../components/element/PartnersCarousel";
 import Head from "next/head";
 import axios from "axios";
 
-var bnr3 = "/images/banner/bnr3.jpg";
+var bnr3 = "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
 var bg1 = "/images/background/bg-video.png";
 var bg2 = "/images/background/bg1.jpg";
 
@@ -70,6 +70,18 @@ function AboutUs({ partners, ourteams }) {
                         needed some dynamic modern feature on their services.
                         SIMPLY CHOOSE and ORDER!
                       </p>
+                      <div className="row m-t10 m-l5">
+                        <div className="col-lg-12 text-center ">
+                          <Link href={"/Portofolio"}>
+                            <button
+                              className="site-button yellow m-r15 radius-xl box-shadow "
+                              type="button"
+                            >
+                              Go To Portofolio
+                            </button>
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -125,11 +137,23 @@ function AboutUs({ partners, ourteams }) {
                     </div>
                   ))}
               </div>
+              <div className="row m-t10 m-l5">
+                <div className="col-lg-12 text-center ">
+                  <Link href={"/OurTeam"}>
+                    <button
+                      className="site-button yellow m-r15 radius-xl box-shadow "
+                      type="button"
+                    >
+                      View All
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer hideContactInfo displayNewsLetter></Footer>
     </>
   );
 }

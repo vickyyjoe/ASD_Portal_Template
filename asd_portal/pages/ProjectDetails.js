@@ -158,7 +158,7 @@ export class ProjectDetails extends Component {
             </div>
           </div>
         </div>
-        <Footer></Footer>
+        <Footer hideContactInfo displayNewsLetter></Footer>
       </>
     );
   }
