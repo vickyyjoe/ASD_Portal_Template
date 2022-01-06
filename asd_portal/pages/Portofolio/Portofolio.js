@@ -1,14 +1,15 @@
 import { Component } from "react";
 import Link from "next/link";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import PortfolioCard from "../components/element/PortfolioCard";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import PortfolioCard from "../../components/element/PortfolioCard";
 import Head from "next/head";
 import axios from "axios";
 
-const bg = "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
+const bg =
+  "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
 
-function Portofolio({ portofolios }) {
+function Portofolio({ portofolios, clients }) {
   // console.log(portofolios);
   return (
     <>
@@ -39,7 +40,7 @@ function Portofolio({ portofolios }) {
 
         <PortfolioCard col="col-md-4" portfolios={portofolios} />
       </div>
-      <Footer hideContactInfo displayNewsLetter/>
+      <Footer hideContactInfo displayNewsLetter />
     </>
   );
 }
