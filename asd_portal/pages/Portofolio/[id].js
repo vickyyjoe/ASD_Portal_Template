@@ -5,9 +5,11 @@ import Footer from "../../components/Footer";
 import Head from "next/head";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import Avatar from "react-avatar";
 
-const bg = "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
-function ProjectDetails({ projects, clients,teams }) {
+const bg =
+  "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
+function ProjectDetails({ projects, clients, teams, images }) {
   console.log(clients);
   console.log(projects);
 
@@ -53,11 +55,12 @@ function ProjectDetails({ projects, clients,teams }) {
                       clients.map((client) => (
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 p-lr0">
                           <div className="pro-details">
-                            <i className="ti ti-user"></i>
-                            <strong>
-                              {" "}
-                              {client.projectRole}
-                            </strong>{" "}
+                            <Avatar
+                              src={client.projectteamImage.url}
+                              round="50px"
+                              size={75}
+                            />
+                            <strong> {client.projectRole}</strong>{" "}
                             {client.projectMember}
                           </div>
                         </div>
@@ -69,14 +72,15 @@ function ProjectDetails({ projects, clients,teams }) {
                   <p>{projects.projectteamDesc}</p>
                   <div className="row widget widget_getintuch widget_getintuch-pro-details m-lr0">
                     {teams &&
-                      teams.slice(3,7).map((team) => (
+                      teams.slice(0, 4).map((team) => (
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 p-lr0">
                           <div className="pro-details">
-                            <i className="ti ti-user"></i>
-                            <strong>
-                              {" "}
-                              {team.projectRole}
-                            </strong>{" "}
+                            <Avatar
+                              src={team.projectteamImage.url}
+                              round="50px"
+                              size={75}
+                            />
+                            <strong> {team.projectRole}</strong>{" "}
                             {team.projectMember}
                           </div>
                         </div>
@@ -85,20 +89,30 @@ function ProjectDetails({ projects, clients,teams }) {
                 </div>
                 <div className="col-lg-6">
                   <div className="row">
-                 
-                    <div className="col-lg-12 m-b30">
-                      <img alt="" src={""} />
-                    </div>
-                     
-                    <div className="col-lg-6 col-md-6 col-sm-6 m-b30">
-                      <img alt="" src={"/images/our-services/pic2.jpg"} />
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-6 m-b30">
-                      <img alt="" src={"/images/our-services/pic3.jpg"} />
-                    </div>
-                    <div className="col-lg-12 m-b30">
-                      <img alt="" src={"/images/about/about2.jpg"} />
-                    </div>
+                    {images &&
+                      images.slice(0, 1).map((image) => (
+                        <div className="col-lg-12 m-b30">
+                          <img alt="" src={image.projectImage.url} />
+                        </div>
+                      ))}
+                    {images &&
+                      images.slice(1, 2).map((image) => (
+                        <div className="col-lg-6 col-md-6 col-sm-6 m-b30">
+                          <img alt="" src={image.projectImage.url} />
+                        </div>
+                      ))}
+                    {images &&
+                      images.slice(2, 3).map((image) => (
+                        <div className="col-lg-6 col-md-6 col-sm-6 m-b30">
+                          <img alt="" src={image.projectImage.url} />
+                        </div>
+                      ))}
+                    {images &&
+                      images.slice(3, 4).map((image) => (
+                        <div className="col-lg-12 m-b30">
+                          <img alt="" src={image.projectImage.url} />
+                        </div>
+                      ))}
                   </div>
                 </div>
               </div>
@@ -136,7 +150,7 @@ export async function getStaticProps(context) {
   const projects = res.data;
 
   const ClientRes = await axios(
-    "https://asd-portal-be.herokuapp.com/project-details?projectRole=Client"
+    "https://asd-portal-be.herokuapp.com/project-clients"
   );
   const clients = ClientRes.data;
 
@@ -145,5 +159,10 @@ export async function getStaticProps(context) {
   );
   const teams = teamRes.data;
 
-  return { props: { projects, clients , teams } };
+  const imageRes = await axios(
+    "https://asd-portal-be.herokuapp.com/project-images"
+  );
+  const images = imageRes.data;
+
+  return { props: { projects, clients, teams, images } };
 }
