@@ -16,8 +16,8 @@ function ProjectDetails({ projects, clients, teams, images }) {
   return (
     <>
       <Head>
-        <title>Project Detail</title>
-        <link rel="shortcut icon" href="kalbe.ico" />
+        <title>Project details</title>
+        <link rel="shortcut icon" href="/kalbe.ico" />
       </Head>
       <Header></Header>
       <div className="page-content bg-white">

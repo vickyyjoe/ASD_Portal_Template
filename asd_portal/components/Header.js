@@ -99,7 +99,7 @@ class Header extends Component {
                 <div class="container clearfix">
                   <div class="logo-header mostion">
                     <Link href={"/"}>
-                      <img src={"kalbe.jpg"} alt="" height={20}/>
+                      <img src={"/kalbe.jpg"} alt="" height={30}/>
                     </Link>
                   </div>
 
