@@ -1,8 +1,8 @@
 import { Component } from "react";
 import Link from "next/link";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import PortfolioCard from "../components/element/PortfolioCard";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import PortfolioCard from "../../components/element/PortfolioCard";
 import Head from "next/head";
 import axios from "axios";
 

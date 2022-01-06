@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Link from "next/link";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Head from "next/head";
 
 const bg = "/images/banner/bnr4.jpg";
