@@ -4,12 +4,17 @@ import Header from "./Header";
 import { Accordion, AccordionItem } from "react-sanfona";
 import Counter from "./element/Counter";
 import Footer from "./Footer";
+import React from "react";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 var bg1 = "/images/background/bg1.jpg";
-const bg = "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
+const bg =
+  "https://res.cloudinary.com/asd-portal-media/image/upload/v1638987364/6_retake_355b18a44e.jpg";
 
 function franchise({ procedures, pricings, faqs }) {
   console.log(faqs);
+
   return (
     <div className="skin-1">
       <Header></Header>
@@ -155,12 +160,17 @@ function franchise({ procedures, pricings, faqs }) {
                               </span>
                               <div class="pricingtable-footer">
                                 {" "}
-                                <a
-                                  href="/TahapDevelopment"
-                                  class="site-button "
+                                <Popup
+                                  trigger={<div class="site-button ">Buy</div>}
+                                  position="right center"
                                 >
-                                  Buy
-                                </a>{" "}
+                                  <div>
+                                    Apahkah anda ingin membeli paket ini ?!
+                                    <a href="/TahapDevelopment">
+                                      <div class="site-button ">Yes</div>
+                                    </a>
+                                  </div>
+                                </Popup>{" "}
                               </div>
                             </div>
                           </div>
@@ -193,12 +203,17 @@ function franchise({ procedures, pricings, faqs }) {
                               </span>
                               <div class="pricingtable-footer">
                                 {" "}
-                                <a
-                                  href="/TahapDevelopment"
-                                  class="site-button "
+                                <Popup
+                                  trigger={<div class="site-button ">Buy</div>}
+                                  position="right center"
                                 >
-                                  Buy
-                                </a>{" "}
+                                  <div>
+                                    Apahkah anda ingin membeli paket ini ?!
+                                    <a href="/TahapDevelopment">
+                                      <div class="site-button ">Yes</div>
+                                    </a>
+                                  </div>
+                                </Popup>{" "}
                               </div>
                             </div>
                           </div>
@@ -231,12 +246,17 @@ function franchise({ procedures, pricings, faqs }) {
                               </span>
                               <div class="pricingtable-footer">
                                 {" "}
-                                <a
-                                  href="/TahapDevelopment"
-                                  class="site-button "
+                                <Popup
+                                  trigger={<div class="site-button ">Buy</div>}
+                                  position="right center"
                                 >
-                                  Buy
-                                </a>{" "}
+                                  <div>
+                                    Apahkah anda ingin membeli paket ini ?!
+                                    <a href="/TahapDevelopment">
+                                      <div class="site-button ">Yes</div>
+                                    </a>
+                                  </div>
+                                </Popup>{" "}
                               </div>
                             </div>
                           </div>
