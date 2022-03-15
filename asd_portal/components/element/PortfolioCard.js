@@ -95,7 +95,9 @@ const PortfolioCard = ({ portfolios }) => {
                         </div>
                         <div className="dez-info p-a30 bg-white">
                           <p className="dez-title m-t0">
-                            <Link href="/">{filteredList.portfolioName}</Link>
+                            <Link href={"/Portofolio/" + filteredList.id}>
+                              {filteredList.portfolioName}
+                            </Link>
                           </p>
                           <p>
                             <small>{filteredList.portfolioCategory}</small>
